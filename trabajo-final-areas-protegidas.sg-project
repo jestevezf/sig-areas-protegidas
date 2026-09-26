@@ -29,8 +29,8 @@
             <FIELD type="COLOR">Color</FIELD>
             <FIELD type="STRING">Name</FIELD>
             <FIELD type="STRING">Description</FIELD>
-            <FIELD type="DOUBLE">Minimum</FIELD>
-            <FIELD type="DOUBLE">Maximum</FIELD>
+            <FIELD type="STRING">Minimum</FIELD>
+            <FIELD type="STRING">Maximum</FIELD>
           </FIELDS>
           <RECORDS>
             <RECORD>
@@ -96,6 +96,241 @@
         <OPTION type="boolean" id="EDIT_GLEAM" name="Gleam">true</OPTION>
         <DATA_LIST type="shapes_list" id="EDIT_SNAP_LIST" name="Snap to...">
           <DATA>/Users/jfestevez/Desktop/gadm41_DOM_shp/gadm41_DOM_1.shp</DATA>
+        </DATA_LIST>
+        <OPTION type="integer" id="EDIT_SNAP_DIST" name="Snap Distance">10</OPTION>
+        <OPTION type="choice" id="DISPLAY_BRUSH" name="Fill Style" index="0">Opaque</OPTION>
+        <OPTION type="boolean" id="OUTLINE" name="Outline">true</OPTION>
+        <OPTION type="color" id="OUTLINE_COLOR" name="Color">R000 G000 B000</OPTION>
+        <OPTION type="integer" id="OUTLINE_SIZE" name="Size">1</OPTION>
+        <OPTION type="boolean" id="BOUNDARY_EFFECT" name="Boundary Effect">false</OPTION>
+        <OPTION type="integer" id="BOUNDARY_SIZE" name="Size">4</OPTION>
+        <OPTION type="color" id="BOUNDARY_COLOR" name="Color">R128 G128 B128</OPTION>
+        <OPTION type="choice" id="DISPLAY_POINTS" name="Show Vertices" index="0">no</OPTION>
+        <OPTION type="boolean" id="DISPLAY_CENTROID" name="Show Centroids">false</OPTION>
+        <OPTION type="color" id="SEL_COLOR_FILL_0" name="Fill Color 1">R255 G225 B000</OPTION>
+        <OPTION type="color" id="SEL_COLOR_FILL_1" name="Fill Color 2">R255 G255 B127</OPTION>
+      </parameters>
+    </DATASET>
+    <DATASET dataset_id="17903867340000001" type="SHAPES">
+      <FILE>gadm41_DOM_1 [Selection].shp</FILE>
+      <parameters name="gadm41_DOM_1 [Selection]">
+        <OPTION type="text" id="OBJECT_NAME" name="Name">gadm41_DOM_1 [Selection]</OPTION>
+        <OPTION type="long_text" id="OBJECT_DESC" name="Description"/>
+        <OPTION type="double" id="MAX_SAMPLES" name="Sample Size">100</OPTION>
+        <OPTION type="range" id="OBJECT_NODATA" name="Data Exclusion">-99999; -99999</OPTION>
+        <OPTION type="choice" id="TABLE_FLT_STYLE" name="Floating Point Numbers" index="1">compact</OPTION>
+        <OPTION type="integer" id="TABLE_FLT_DECIMALS" name="Decimals">6</OPTION>
+        <OPTION type="choice" id="INFO_FIELD" name="Feature Description" index="11">&lt;none&gt;</OPTION>
+        <OPTION type="boolean" id="LEGEND_SHOW" name="Map Legends">true</OPTION>
+        <OPTION type="choice" id="LEGEND_ORIENTATION" name="Orientation" index="0">vertical</OPTION>
+        <OPTION type="choice" id="LEGEND_TITLE" name="Title" index="0">data set</OPTION>
+        <OPTION type="text" id="LEGEND_TITLE_TEXT" name="User Defined">Title</OPTION>
+        <OPTION type="choice" id="LEGEND_FIELD" name="Field Labeling" index="0">automatic</OPTION>
+        <OPTION type="text" id="LEGEND_FIELD_TEXT" name="User Defined">Label</OPTION>
+        <OPTION type="boolean" id="SHOW_ALWAYS" name="Show at all scales">true</OPTION>
+        <OPTION type="range" id="SHOW_RANGE" name="Scale Range">100; 1000</OPTION>
+        <OPTION type="double" id="DISPLAY_TRANSPARENCY" name="Transparency">0</OPTION>
+        <OPTION type="choice" id="COLORS_TYPE" name="Type" index="0">Single Symbol</OPTION>
+        <OPTION type="color" id="SINGLE_COLOR" name="Color">R000 G128 B128</OPTION>
+        <OPTION type="choice" id="LUT_FIELD" name="Field" index="0">GID_1</OPTION>
+        <OPTION type="choice" id="LUT_NORMAL" name="Normalization" index="0">&lt;none&gt;</OPTION>
+        <OPTION type="static_table" id="LUT" name="Table">
+          <FIELDS>
+            <FIELD type="COLOR">Color</FIELD>
+            <FIELD type="STRING">Name</FIELD>
+            <FIELD type="STRING">Description</FIELD>
+            <FIELD type="DOUBLE">Minimum</FIELD>
+            <FIELD type="DOUBLE">Maximum</FIELD>
+          </FIELDS>
+          <RECORDS>
+            <RECORD>
+              <FIELD>16737536</FIELD>
+              <FIELD>Class 1</FIELD>
+              <FIELD>First Class</FIELD>
+              <FIELD>0.000000</FIELD>
+              <FIELD>1.000000</FIELD>
+            </RECORD>
+            <RECORD>
+              <FIELD>35839</FIELD>
+              <FIELD>Class 2</FIELD>
+              <FIELD>Second Class</FIELD>
+              <FIELD>1.000000</FIELD>
+              <FIELD>2.000000</FIELD>
+            </RECORD>
+          </RECORDS>
+        </OPTION>
+        <OPTION type="choice" id="METRIC_FIELD" name="Field" index="0">&lt;none&gt;</OPTION>
+        <OPTION type="choice" id="METRIC_NORMAL" name="Normalization" index="0">&lt;none&gt;</OPTION>
+        <OPTION type="choice" id="METRIC_NORFMT" name="Labeling" index="0">fraction</OPTION>
+        <OPTION type="colors" id="METRIC_COLORS" name="Colors">
+          <COLOR>R000 G001 B128</COLOR>
+          <COLOR>R000 G010 B176</COLOR>
+          <COLOR>R000 G079 B245</COLOR>
+          <COLOR>R001 G127 B255</COLOR>
+          <COLOR>R038 G217 B217</COLOR>
+          <COLOR>R128 G255 B128</COLOR>
+          <COLOR>R176 G245 B079</COLOR>
+          <COLOR>R245 G176 B010</COLOR>
+          <COLOR>R255 G128 B001</COLOR>
+          <COLOR>R217 G038 B000</COLOR>
+          <COLOR>R127 G001 B000</COLOR>
+        </OPTION>
+        <OPTION type="choice" id="STRETCH_DEFAULT" name="Adjustment" index="1">Standard Deviation</OPTION>
+        <OPTION type="range" id="STRETCH_LINEAR" name="Linear Percent Stretch">0; 100</OPTION>
+        <OPTION type="double" id="STRETCH_STDDEV" name="Standard Deviation">2</OPTION>
+        <OPTION type="boolean" id="STRETCH_INRANGE" name="Keep in Range">true</OPTION>
+        <OPTION type="range" id="STRETCH_PCTL" name="Percent Clip">1; 99</OPTION>
+        <OPTION type="range" id="METRIC_ZRANGE" name="Range">0; 0</OPTION>
+        <OPTION type="choice" id="METRIC_SCALE_MODE" name="Scaling" index="0">linear intervals</OPTION>
+        <OPTION type="double" id="METRIC_SCALE_LOG" name="Geometric Interval Factor">1</OPTION>
+        <OPTION type="choice" id="DRAWING_ORDER" name="Drawing Order" index="0">data set</OPTION>
+        <OPTION type="boolean" id="NODATA_SHOW" name="Show No-Data">true</OPTION>
+        <OPTION type="color" id="NODATA_COLOR" name="Color">R192 G192 B192</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD" name="Field" index="3">NAME_1</OPTION>
+        <OPTION type="font" id="LABEL_FIELD_FONT" name="Font">
+          <COLOR>R000 G000 B000</COLOR>
+          <FONT>.applesystemuifont 9 utf-8</FONT>
+        </OPTION>
+        <OPTION type="color" id="LABEL_COLOR" name="Color">R255 G255 B255</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD_EFFECT" name="Boundary Effect" index="1">full frame</OPTION>
+        <OPTION type="color" id="LABEL_FIELD_EFFECT_COLOR" name="Color">R023 G023 B023</OPTION>
+        <OPTION type="integer" id="LABEL_FIELD_EFFECT_SIZE" name="Size">1</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD_PREC" name="Numerical Precision" index="0">fit to value</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD_SIZE_TYPE" name="Size relates to..." index="0">Screen</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD_SIZEBY" name="Size by Attribute" index="0">&lt;none&gt;</OPTION>
+        <OPTION type="double" id="LABEL_FIELD_SIZE" name="Default Size">100</OPTION>
+        <OPTION type="boolean" id="CHART_DISPLAY" name="Show">false</OPTION>
+        <parameters name="Settings" id="CHART_SETTINGS" type="parameters"/>
+        <OPTION type="color" id="SEL_COLOR" name="Color">R255 G000 B000</OPTION>
+        <OPTION type="color" id="EDIT_COLOR" name="Color">R000 G000 B000</OPTION>
+        <OPTION type="boolean" id="EDIT_GLEAM" name="Gleam">true</OPTION>
+        <DATA_LIST type="shapes_list" id="EDIT_SNAP_LIST" name="Snap to...">
+          <DATA>/Users/jfestevez/Desktop/SIG-Trabajo-Final/gadm41_DOM_1 [Selection].shp</DATA>
+        </DATA_LIST>
+        <OPTION type="integer" id="EDIT_SNAP_DIST" name="Snap Distance">10</OPTION>
+        <OPTION type="choice" id="DISPLAY_BRUSH" name="Fill Style" index="0">Opaque</OPTION>
+        <OPTION type="boolean" id="OUTLINE" name="Outline">true</OPTION>
+        <OPTION type="color" id="OUTLINE_COLOR" name="Color">R000 G000 B000</OPTION>
+        <OPTION type="integer" id="OUTLINE_SIZE" name="Size">1</OPTION>
+        <OPTION type="boolean" id="BOUNDARY_EFFECT" name="Boundary Effect">false</OPTION>
+        <OPTION type="integer" id="BOUNDARY_SIZE" name="Size">4</OPTION>
+        <OPTION type="color" id="BOUNDARY_COLOR" name="Color">R128 G128 B128</OPTION>
+        <OPTION type="choice" id="DISPLAY_POINTS" name="Show Vertices" index="0">no</OPTION>
+        <OPTION type="boolean" id="DISPLAY_CENTROID" name="Show Centroids">false</OPTION>
+        <OPTION type="color" id="SEL_COLOR_FILL_0" name="Fill Color 1">R255 G225 B000</OPTION>
+        <OPTION type="color" id="SEL_COLOR_FILL_1" name="Fill Color 2">R255 G255 B127</OPTION>
+      </parameters>
+    </DATASET>
+    <DATASET dataset_id="17903867340000002" type="SHAPES">
+      <FILE>Drainage Basins.shp</FILE>
+      <parameters name="Drainage Basins">
+        <OPTION type="text" id="OBJECT_NAME" name="Name">Drainage Basins</OPTION>
+        <OPTION type="long_text" id="OBJECT_DESC" name="Description"/>
+        <OPTION type="double" id="MAX_SAMPLES" name="Sample Size">100</OPTION>
+        <OPTION type="range" id="OBJECT_NODATA" name="Data Exclusion">-99999; -99999</OPTION>
+        <OPTION type="choice" id="TABLE_FLT_STYLE" name="Floating Point Numbers" index="1">compact</OPTION>
+        <OPTION type="integer" id="TABLE_FLT_DECIMALS" name="Decimals">6</OPTION>
+        <OPTION type="choice" id="INFO_FIELD" name="Feature Description" index="4">&lt;none&gt;</OPTION>
+        <OPTION type="boolean" id="LEGEND_SHOW" name="Map Legends">true</OPTION>
+        <OPTION type="choice" id="LEGEND_ORIENTATION" name="Orientation" index="0">vertical</OPTION>
+        <OPTION type="choice" id="LEGEND_TITLE" name="Title" index="0">data set</OPTION>
+        <OPTION type="text" id="LEGEND_TITLE_TEXT" name="User Defined">Title</OPTION>
+        <OPTION type="choice" id="LEGEND_FIELD" name="Field Labeling" index="0">automatic</OPTION>
+        <OPTION type="text" id="LEGEND_FIELD_TEXT" name="User Defined">Label</OPTION>
+        <OPTION type="boolean" id="SHOW_ALWAYS" name="Show at all scales">true</OPTION>
+        <OPTION type="range" id="SHOW_RANGE" name="Scale Range">100; 1000</OPTION>
+        <OPTION type="double" id="DISPLAY_TRANSPARENCY" name="Transparency">0</OPTION>
+        <OPTION type="choice" id="COLORS_TYPE" name="Type" index="0">Single Symbol</OPTION>
+        <OPTION type="color" id="SINGLE_COLOR" name="Color">R000 G000 B255</OPTION>
+        <OPTION type="choice" id="LUT_FIELD" name="Field" index="1">VALUE</OPTION>
+        <OPTION type="choice" id="LUT_NORMAL" name="Normalization" index="4">&lt;none&gt;</OPTION>
+        <OPTION type="static_table" id="LUT" name="Table">
+          <FIELDS>
+            <FIELD type="COLOR">Color</FIELD>
+            <FIELD type="STRING">Name</FIELD>
+            <FIELD type="STRING">Description</FIELD>
+            <FIELD type="DOUBLE">Minimum</FIELD>
+            <FIELD type="DOUBLE">Maximum</FIELD>
+          </FIELDS>
+          <RECORDS>
+            <RECORD>
+              <FIELD>216</FIELD>
+              <FIELD>Class 1</FIELD>
+              <FIELD>First Class</FIELD>
+              <FIELD>0.000000</FIELD>
+              <FIELD>1.000000</FIELD>
+            </RECORD>
+            <RECORD>
+              <FIELD>15071232</FIELD>
+              <FIELD>Class 2</FIELD>
+              <FIELD>Second Class</FIELD>
+              <FIELD>1.000000</FIELD>
+              <FIELD>2.000000</FIELD>
+            </RECORD>
+          </RECORDS>
+        </OPTION>
+        <OPTION type="choice" id="METRIC_FIELD" name="Field" index="1">VALUE</OPTION>
+        <OPTION type="choice" id="METRIC_NORMAL" name="Normalization" index="4">&lt;none&gt;</OPTION>
+        <OPTION type="choice" id="METRIC_NORFMT" name="Labeling" index="0">fraction</OPTION>
+        <OPTION type="colors" id="METRIC_COLORS" name="Colors">
+          <COLOR>R000 G001 B128</COLOR>
+          <COLOR>R000 G010 B176</COLOR>
+          <COLOR>R000 G079 B245</COLOR>
+          <COLOR>R001 G127 B255</COLOR>
+          <COLOR>R038 G217 B217</COLOR>
+          <COLOR>R128 G255 B128</COLOR>
+          <COLOR>R176 G245 B079</COLOR>
+          <COLOR>R245 G176 B010</COLOR>
+          <COLOR>R255 G128 B001</COLOR>
+          <COLOR>R217 G038 B000</COLOR>
+          <COLOR>R127 G001 B000</COLOR>
+        </OPTION>
+        <OPTION type="choice" id="STRETCH_DEFAULT" name="Adjustment" index="1">Standard Deviation</OPTION>
+        <OPTION type="range" id="STRETCH_LINEAR" name="Linear Percent Stretch">0; 100</OPTION>
+        <OPTION type="double" id="STRETCH_STDDEV" name="Standard Deviation">2</OPTION>
+        <OPTION type="boolean" id="STRETCH_INRANGE" name="Keep in Range">true</OPTION>
+        <OPTION type="range" id="STRETCH_PCTL" name="Percent Clip">1; 99</OPTION>
+        <OPTION type="range" id="METRIC_ZRANGE" name="Range">0; 0</OPTION>
+        <OPTION type="choice" id="METRIC_SCALE_MODE" name="Scaling" index="0">linear intervals</OPTION>
+        <OPTION type="double" id="METRIC_SCALE_LOG" name="Geometric Interval Factor">1</OPTION>
+        <OPTION type="choice" id="DRAWING_ORDER" name="Drawing Order" index="0">data set</OPTION>
+        <OPTION type="boolean" id="NODATA_SHOW" name="Show No-Data">true</OPTION>
+        <OPTION type="color" id="NODATA_COLOR" name="Color">R192 G192 B192</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD" name="Field" index="4">&lt;none&gt;</OPTION>
+        <OPTION type="font" id="LABEL_FIELD_FONT" name="Font">
+          <COLOR>R000 G000 B000</COLOR>
+          <FONT>.applesystemuifont 11 utf-8</FONT>
+        </OPTION>
+        <OPTION type="color" id="LABEL_COLOR" name="Color">R255 G255 B255</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD_EFFECT" name="Boundary Effect" index="1">full frame</OPTION>
+        <OPTION type="color" id="LABEL_FIELD_EFFECT_COLOR" name="Color">R023 G023 B023</OPTION>
+        <OPTION type="integer" id="LABEL_FIELD_EFFECT_SIZE" name="Size">1</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD_PREC" name="Numerical Precision" index="0">fit to value</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD_SIZE_TYPE" name="Size relates to..." index="0">Screen</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD_SIZEBY" name="Size by Attribute" index="4">&lt;none&gt;</OPTION>
+        <OPTION type="double" id="LABEL_FIELD_SIZE" name="Default Size">100</OPTION>
+        <OPTION type="boolean" id="CHART_DISPLAY" name="Show">false</OPTION>
+        <parameters name="Settings" id="CHART_SETTINGS" type="parameters">
+          <OPTION type="choice" id="TYPE" name="Chart Type" parms="CHART_SETTINGS" index="0">bar</OPTION>
+          <OPTION type="boolean" id="OUTLINE" name="Outline" parms="CHART_SETTINGS">false</OPTION>
+          <OPTION type="choice" id="SIZE_FIELD" name="Size Field" parms="CHART_SETTINGS" index="4">&lt;none&gt;</OPTION>
+          <OPTION type="range" id="SIZE_RANGE" name="Size Range" parms="CHART_SETTINGS">5; 25</OPTION>
+          <OPTION type="double" id="SIZE_DEFAULT" name="Default Size" parms="CHART_SETTINGS">15</OPTION>
+          <OPTION type="choice" id="SIZE_TYPE" name="Size relates to..." parms="CHART_SETTINGS" index="0">Screen</OPTION>
+          <OPTION type="boolean" id="FIELD_0" name="ID" parms="CHART_SETTINGS">false</OPTION>
+          <OPTION type="color" id="COLOR_0" parms="CHART_SETTINGS">R000 G001 B128</OPTION>
+          <OPTION type="boolean" id="FIELD_1" name="VALUE" parms="CHART_SETTINGS">false</OPTION>
+          <OPTION type="color" id="COLOR_1" parms="CHART_SETTINGS">R010 G176 B245</OPTION>
+          <OPTION type="boolean" id="FIELD_2" name="AREA" parms="CHART_SETTINGS">false</OPTION>
+          <OPTION type="color" id="COLOR_2" parms="CHART_SETTINGS">R217 G217 B038</OPTION>
+          <OPTION type="boolean" id="FIELD_3" name="PERIMETER" parms="CHART_SETTINGS">false</OPTION>
+          <OPTION type="color" id="COLOR_3" parms="CHART_SETTINGS">R127 G001 B000</OPTION>
+        </parameters>
+        <OPTION type="color" id="SEL_COLOR" name="Color">R255 G000 B000</OPTION>
+        <OPTION type="color" id="EDIT_COLOR" name="Color">R000 G000 B000</OPTION>
+        <OPTION type="boolean" id="EDIT_GLEAM" name="Gleam">true</OPTION>
+        <DATA_LIST type="shapes_list" id="EDIT_SNAP_LIST" name="Snap to...">
+          <DATA>/Users/jfestevez/Desktop/SIG-Trabajo-Final/Drainage Basins.shp</DATA>
         </DATA_LIST>
         <OPTION type="integer" id="EDIT_SNAP_DIST" name="Snap Distance">10</OPTION>
         <OPTION type="choice" id="DISPLAY_BRUSH" name="Fill Style" index="0">Opaque</OPTION>
@@ -187,7 +422,7 @@
         <OPTION type="double" id="STRETCH_STDDEV" name="Standard Deviation">2</OPTION>
         <OPTION type="boolean" id="STRETCH_INRANGE" name="Keep in Range">true</OPTION>
         <OPTION type="range" id="STRETCH_PCTL" name="Percent Clip">1; 99</OPTION>
-        <OPTION type="range" id="METRIC_ZRANGE" name="Range">0; 0</OPTION>
+        <OPTION type="range" id="METRIC_ZRANGE" name="Range">1; 10</OPTION>
         <OPTION type="choice" id="METRIC_SCALE_MODE" name="Scaling" index="0">linear intervals</OPTION>
         <OPTION type="double" id="METRIC_SCALE_LOG" name="Geometric Interval Factor">1</OPTION>
         <OPTION type="choice" id="DRAWING_ORDER" name="Drawing Order" index="0">data set</OPTION>
@@ -198,7 +433,7 @@
           <COLOR>R000 G000 B000</COLOR>
           <FONT>.applesystemuifont 11 utf-8</FONT>
         </OPTION>
-        <OPTION type="color" id="LABEL_COLOR" name="Color">R000 G255 B255</OPTION>
+        <OPTION type="color" id="LABEL_COLOR" name="Color">R255 G255 B010</OPTION>
         <OPTION type="choice" id="LABEL_FIELD_EFFECT" name="Boundary Effect" index="1">full frame</OPTION>
         <OPTION type="color" id="LABEL_FIELD_EFFECT_COLOR" name="Color">R023 G023 B023</OPTION>
         <OPTION type="integer" id="LABEL_FIELD_EFFECT_SIZE" name="Size">1</OPTION>
@@ -265,6 +500,870 @@
         <OPTION type="color" id="SEL_COLOR_FILL" name="Fill Color">R255 G255 B000</OPTION>
       </parameters>
     </DATASET>
+    <DATASET dataset_id="17903867340000003" type="SHAPES">
+      <FILE>Channels.shp</FILE>
+      <parameters name="Channels">
+        <OPTION type="text" id="OBJECT_NAME" name="Name">Channels</OPTION>
+        <OPTION type="long_text" id="OBJECT_DESC" name="Description"/>
+        <OPTION type="double" id="MAX_SAMPLES" name="Sample Size">100</OPTION>
+        <OPTION type="range" id="OBJECT_NODATA" name="Data Exclusion">-99999; -99999</OPTION>
+        <OPTION type="choice" id="TABLE_FLT_STYLE" name="Floating Point Numbers" index="1">compact</OPTION>
+        <OPTION type="integer" id="TABLE_FLT_DECIMALS" name="Decimals">6</OPTION>
+        <OPTION type="choice" id="INFO_FIELD" name="Feature Description" index="7">&lt;none&gt;</OPTION>
+        <OPTION type="boolean" id="LEGEND_SHOW" name="Map Legends">true</OPTION>
+        <OPTION type="choice" id="LEGEND_ORIENTATION" name="Orientation" index="0">vertical</OPTION>
+        <OPTION type="choice" id="LEGEND_TITLE" name="Title" index="0">data set</OPTION>
+        <OPTION type="text" id="LEGEND_TITLE_TEXT" name="User Defined">Title</OPTION>
+        <OPTION type="choice" id="LEGEND_FIELD" name="Field Labeling" index="0">automatic</OPTION>
+        <OPTION type="text" id="LEGEND_FIELD_TEXT" name="User Defined">Label</OPTION>
+        <OPTION type="boolean" id="SHOW_ALWAYS" name="Show at all scales">true</OPTION>
+        <OPTION type="range" id="SHOW_RANGE" name="Scale Range">100; 1000</OPTION>
+        <OPTION type="double" id="DISPLAY_TRANSPARENCY" name="Transparency">0</OPTION>
+        <OPTION type="choice" id="COLORS_TYPE" name="Type" index="0">Single Symbol</OPTION>
+        <OPTION type="color" id="SINGLE_COLOR" name="Color">R000 G255 B255</OPTION>
+        <OPTION type="choice" id="LUT_FIELD" name="Field" index="0">SEGMENT_ID</OPTION>
+        <OPTION type="choice" id="LUT_NORMAL" name="Normalization" index="7">&lt;none&gt;</OPTION>
+        <OPTION type="static_table" id="LUT" name="Table">
+          <FIELDS>
+            <FIELD type="COLOR">Color</FIELD>
+            <FIELD type="STRING">Name</FIELD>
+            <FIELD type="STRING">Description</FIELD>
+            <FIELD type="DOUBLE">Minimum</FIELD>
+            <FIELD type="DOUBLE">Maximum</FIELD>
+          </FIELDS>
+          <RECORDS>
+            <RECORD>
+              <FIELD>216</FIELD>
+              <FIELD>Class 1</FIELD>
+              <FIELD>First Class</FIELD>
+              <FIELD>0.000000</FIELD>
+              <FIELD>1.000000</FIELD>
+            </RECORD>
+            <RECORD>
+              <FIELD>15071232</FIELD>
+              <FIELD>Class 2</FIELD>
+              <FIELD>Second Class</FIELD>
+              <FIELD>1.000000</FIELD>
+              <FIELD>2.000000</FIELD>
+            </RECORD>
+          </RECORDS>
+        </OPTION>
+        <OPTION type="choice" id="METRIC_FIELD" name="Field" index="0">SEGMENT_ID</OPTION>
+        <OPTION type="choice" id="METRIC_NORMAL" name="Normalization" index="7">&lt;none&gt;</OPTION>
+        <OPTION type="choice" id="METRIC_NORFMT" name="Labeling" index="0">fraction</OPTION>
+        <OPTION type="colors" id="METRIC_COLORS" name="Colors">
+          <COLOR>R000 G001 B128</COLOR>
+          <COLOR>R000 G010 B176</COLOR>
+          <COLOR>R000 G079 B245</COLOR>
+          <COLOR>R001 G127 B255</COLOR>
+          <COLOR>R038 G217 B217</COLOR>
+          <COLOR>R128 G255 B128</COLOR>
+          <COLOR>R176 G245 B079</COLOR>
+          <COLOR>R245 G176 B010</COLOR>
+          <COLOR>R255 G128 B001</COLOR>
+          <COLOR>R217 G038 B000</COLOR>
+          <COLOR>R127 G001 B000</COLOR>
+        </OPTION>
+        <OPTION type="choice" id="STRETCH_DEFAULT" name="Adjustment" index="1">Standard Deviation</OPTION>
+        <OPTION type="range" id="STRETCH_LINEAR" name="Linear Percent Stretch">0; 100</OPTION>
+        <OPTION type="double" id="STRETCH_STDDEV" name="Standard Deviation">2</OPTION>
+        <OPTION type="boolean" id="STRETCH_INRANGE" name="Keep in Range">true</OPTION>
+        <OPTION type="range" id="STRETCH_PCTL" name="Percent Clip">1; 99</OPTION>
+        <OPTION type="range" id="METRIC_ZRANGE" name="Range">0; 0</OPTION>
+        <OPTION type="choice" id="METRIC_SCALE_MODE" name="Scaling" index="0">linear intervals</OPTION>
+        <OPTION type="double" id="METRIC_SCALE_LOG" name="Geometric Interval Factor">1</OPTION>
+        <OPTION type="choice" id="DRAWING_ORDER" name="Drawing Order" index="0">data set</OPTION>
+        <OPTION type="boolean" id="NODATA_SHOW" name="Show No-Data">true</OPTION>
+        <OPTION type="color" id="NODATA_COLOR" name="Color">R192 G192 B192</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD" name="Field" index="7">&lt;none&gt;</OPTION>
+        <OPTION type="font" id="LABEL_FIELD_FONT" name="Font">
+          <COLOR>R000 G000 B000</COLOR>
+          <FONT>.applesystemuifont 11 utf-8</FONT>
+        </OPTION>
+        <OPTION type="color" id="LABEL_COLOR" name="Color">R255 G255 B255</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD_EFFECT" name="Boundary Effect" index="1">full frame</OPTION>
+        <OPTION type="color" id="LABEL_FIELD_EFFECT_COLOR" name="Color">R023 G023 B023</OPTION>
+        <OPTION type="integer" id="LABEL_FIELD_EFFECT_SIZE" name="Size">1</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD_PREC" name="Numerical Precision" index="0">fit to value</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD_SIZE_TYPE" name="Size relates to..." index="0">Screen</OPTION>
+        <OPTION type="choice" id="LABEL_FIELD_SIZEBY" name="Size by Attribute" index="7">&lt;none&gt;</OPTION>
+        <OPTION type="double" id="LABEL_FIELD_SIZE" name="Default Size">100</OPTION>
+        <OPTION type="boolean" id="CHART_DISPLAY" name="Show">false</OPTION>
+        <parameters name="Settings" id="CHART_SETTINGS" type="parameters">
+          <OPTION type="choice" id="TYPE" name="Chart Type" parms="CHART_SETTINGS" index="0">bar</OPTION>
+          <OPTION type="boolean" id="OUTLINE" name="Outline" parms="CHART_SETTINGS">false</OPTION>
+          <OPTION type="choice" id="SIZE_FIELD" name="Size Field" parms="CHART_SETTINGS" index="7">&lt;none&gt;</OPTION>
+          <OPTION type="range" id="SIZE_RANGE" name="Size Range" parms="CHART_SETTINGS">5; 25</OPTION>
+          <OPTION type="double" id="SIZE_DEFAULT" name="Default Size" parms="CHART_SETTINGS">15</OPTION>
+          <OPTION type="choice" id="SIZE_TYPE" name="Size relates to..." parms="CHART_SETTINGS" index="0">Screen</OPTION>
+          <OPTION type="boolean" id="FIELD_0" name="SEGMENT_ID" parms="CHART_SETTINGS">false</OPTION>
+          <OPTION type="color" id="COLOR_0" parms="CHART_SETTINGS">R000 G001 B128</OPTION>
+          <OPTION type="boolean" id="FIELD_1" name="NODE_A" parms="CHART_SETTINGS">false</OPTION>
+          <OPTION type="color" id="COLOR_1" parms="CHART_SETTINGS">R000 G038 B217</OPTION>
+          <OPTION type="boolean" id="FIELD_2" name="NODE_B" parms="CHART_SETTINGS">false</OPTION>
+          <OPTION type="color" id="COLOR_2" parms="CHART_SETTINGS">R010 G176 B245</OPTION>
+          <OPTION type="boolean" id="FIELD_3" name="BASIN" parms="CHART_SETTINGS">false</OPTION>
+          <OPTION type="color" id="COLOR_3" parms="CHART_SETTINGS">R128 G255 B128</OPTION>
+          <OPTION type="boolean" id="FIELD_4" name="ORDER" parms="CHART_SETTINGS">false</OPTION>
+          <OPTION type="color" id="COLOR_4" parms="CHART_SETTINGS">R217 G217 B038</OPTION>
+          <OPTION type="boolean" id="FIELD_5" name="ORDER_CELL" parms="CHART_SETTINGS">false</OPTION>
+          <OPTION type="color" id="COLOR_5" parms="CHART_SETTINGS">R245 G079 B000</OPTION>
+          <OPTION type="boolean" id="FIELD_6" name="LENGTH" parms="CHART_SETTINGS">false</OPTION>
+          <OPTION type="color" id="COLOR_6" parms="CHART_SETTINGS">R127 G001 B000</OPTION>
+        </parameters>
+        <OPTION type="color" id="SEL_COLOR" name="Color">R255 G000 B000</OPTION>
+        <OPTION type="color" id="EDIT_COLOR" name="Color">R000 G000 B000</OPTION>
+        <OPTION type="boolean" id="EDIT_GLEAM" name="Gleam">true</OPTION>
+        <DATA_LIST type="shapes_list" id="EDIT_SNAP_LIST" name="Snap to...">
+          <DATA>/Users/jfestevez/Desktop/SIG-Trabajo-Final/Channels.shp</DATA>
+        </DATA_LIST>
+        <OPTION type="integer" id="EDIT_SNAP_DIST" name="Snap Distance">10</OPTION>
+        <OPTION type="choice" id="LINE_STYLE" name="Line Style" index="0">Solid style</OPTION>
+        <OPTION type="choice" id="BOUNDARY_EFFECT" name="Boundary Effect" index="0">none</OPTION>
+        <OPTION type="color" id="BOUNDARY_COLOR" name="Color">R255 G255 B255</OPTION>
+        <OPTION type="choice" id="DISPLAY_POINTS" name="Show Vertices" index="0">no</OPTION>
+        <OPTION type="choice" id="SIZE_FIELD" name="Field" index="7">&lt;none&gt;</OPTION>
+        <OPTION type="range" id="SIZE_RANGE" name="Size Range">0; 10</OPTION>
+        <OPTION type="integer" id="SIZE_DEFAULT" name="Default Size">1</OPTION>
+        <OPTION type="choice" id="SIZE_TYPE" name="Size relates to..." index="0">Screen</OPTION>
+        <OPTION type="choice" id="LABEL_STYLE" name="Style" index="3">along line labeling</OPTION>
+        <OPTION type="choice" id="LABEL_ALIGN" name="Align" index="1">center</OPTION>
+        <OPTION type="choice" id="LABEL_ORIENT" name="Orientation" index="1">right</OPTION>
+        <OPTION type="double" id="LABEL_FREQUENCY" name="Along Line Frequency">10</OPTION>
+      </parameters>
+    </DATASET>
+    <DATASET dataset_id="17903867340000004" type="GRID">
+      <FILE>../../Downloads/n18_w071_1arc_v3.tif</FILE>
+      <parameters name="n18_w071_1arc_v3">
+        <OPTION type="text" id="OBJECT_NAME" name="Name">n18_w071_1arc_v3</OPTION>
+        <OPTION type="long_text" id="OBJECT_DESC" name="Description"/>
+        <OPTION type="double" id="MAX_SAMPLES" name="Sample Size">7.711764474075785</OPTION>
+        <OPTION type="range" id="OBJECT_NODATA" name="Data Exclusion">-32767; -32767</OPTION>
+        <OPTION type="boolean" id="LEGEND_SHOW" name="Map Legends">true</OPTION>
+        <OPTION type="choice" id="LEGEND_ORIENTATION" name="Orientation" index="0">vertical</OPTION>
+        <OPTION type="choice" id="LEGEND_TITLE" name="Title" index="0">data set</OPTION>
+        <OPTION type="text" id="LEGEND_TITLE_TEXT" name="User Defined">Title</OPTION>
+        <OPTION type="boolean" id="SHOW_ALWAYS" name="Show at all scales">true</OPTION>
+        <OPTION type="range" id="SHOW_RANGE" name="Scale Range">100; 1000</OPTION>
+        <OPTION type="choice" id="DISPLAY_OVERLAY" name="Overlay Mode" index="0">Transparency/Opacity</OPTION>
+        <OPTION type="double" id="DISPLAY_TRANSPARENCY" name="Transparency">0</OPTION>
+        <OPTION type="choice" id="COLORS_TYPE" name="Type" index="3">Graduated Colors</OPTION>
+        <OPTION type="color" id="SINGLE_COLOR" name="Color">R128 G128 B000</OPTION>
+        <OPTION type="static_table" id="LUT" name="Table">
+          <FIELDS>
+            <FIELD type="COLOR">Color</FIELD>
+            <FIELD type="STRING">Name</FIELD>
+            <FIELD type="STRING">Description</FIELD>
+            <FIELD type="DOUBLE">Minimum</FIELD>
+            <FIELD type="DOUBLE">Maximum</FIELD>
+          </FIELDS>
+          <RECORDS>
+            <RECORD>
+              <FIELD>127</FIELD>
+              <FIELD>Class 1</FIELD>
+              <FIELD>First Class</FIELD>
+              <FIELD>0.000000</FIELD>
+              <FIELD>1.000000</FIELD>
+            </RECORD>
+            <RECORD>
+              <FIELD>3394304</FIELD>
+              <FIELD>Class 2</FIELD>
+              <FIELD>Second Class</FIELD>
+              <FIELD>1.000000</FIELD>
+              <FIELD>2.000000</FIELD>
+            </RECORD>
+          </RECORDS>
+        </OPTION>
+        <OPTION type="choice" id="LUT_RESAMPLING" name="Resampling" index="0">Nearest Neighbour</OPTION>
+        <OPTION type="colors" id="METRIC_COLORS" name="Colors">
+          <COLOR>R000 G001 B128</COLOR>
+          <COLOR>R000 G010 B176</COLOR>
+          <COLOR>R000 G079 B245</COLOR>
+          <COLOR>R001 G127 B255</COLOR>
+          <COLOR>R038 G217 B217</COLOR>
+          <COLOR>R128 G255 B128</COLOR>
+          <COLOR>R176 G245 B079</COLOR>
+          <COLOR>R245 G176 B010</COLOR>
+          <COLOR>R255 G128 B001</COLOR>
+          <COLOR>R217 G038 B000</COLOR>
+          <COLOR>R127 G001 B000</COLOR>
+        </OPTION>
+        <OPTION type="choice" id="STRETCH_DEFAULT" name="Adjustment" index="1">Standard Deviation</OPTION>
+        <OPTION type="range" id="STRETCH_LINEAR" name="Linear Percent Stretch">0; 100</OPTION>
+        <OPTION type="double" id="STRETCH_STDDEV" name="Standard Deviation">2</OPTION>
+        <OPTION type="boolean" id="STRETCH_INRANGE" name="Keep in Range">true</OPTION>
+        <OPTION type="range" id="STRETCH_PCTL" name="Percent Clip">1; 99</OPTION>
+        <OPTION type="range" id="METRIC_ZRANGE" name="Range">-5; 1603</OPTION>
+        <OPTION type="choice" id="METRIC_SCALE_MODE" name="Scaling" index="0">linear intervals</OPTION>
+        <OPTION type="double" id="METRIC_SCALE_LOG" name="Geometric Interval Factor">1</OPTION>
+        <OPTION type="boolean" id="FILE_CACHE" name="File Cache">false</OPTION>
+        <OPTION type="text" id="OBJECT_Z_UNIT" name="Unit">m</OPTION>
+        <OPTION type="double" id="OBJECT_Z_FACTOR" name="Scaling">1</OPTION>
+        <OPTION type="double" id="OBJECT_Z_OFFSET" name="Offset">0</OPTION>
+        <OPTION type="boolean" id="VALUES_SHOW" name="Show Cell Values">false</OPTION>
+        <OPTION type="font" id="VALUES_FONT" name="Font">
+          <COLOR>R000 G000 B000</COLOR>
+          <FONT>.applesystemuifont 11 utf-8</FONT>
+        </OPTION>
+        <OPTION type="double" id="VALUES_SIZE" name="Size">15</OPTION>
+        <OPTION type="integer" id="VALUES_DECIMALS" name="Decimals">2</OPTION>
+        <OPTION type="choice" id="VALUES_EFFECT" name="Boundary Effect" index="1">full frame</OPTION>
+        <OPTION type="color" id="VALUES_EFFECT_COLOR" name="Color">R255 G255 B255</OPTION>
+        <OPTION type="choice" id="DISPLAY_RESAMPLING" name="Resampling" index="0">Nearest Neighbour</OPTION>
+        <OPTION type="grid_system" id="DISPLAY_ALPHA_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>0.000277778</CELLSIZE>
+          <XMIN>-71</XMIN>
+          <YMIN>18</YMIN>
+          <XMAX>-69.99999991999999</XMAX>
+          <YMAX>19.00000008</YMAX>
+        </OPTION>
+        <DATA type="grid" id="DISPLAY_ALPHA" name="Transparency Band">NOT SET</DATA>
+        <OPTION type="double" id="ALPHA_RANGE.MIN" name="Full Transparency">0</OPTION>
+        <OPTION type="double" id="ALPHA_RANGE.MAX" name="Full Opacity">0</OPTION>
+        <OPTION type="choice" id="DISPLAY_SHADING" name="Shading" index="0">none</OPTION>
+        <OPTION type="double" id="SHADING_AZIMUTH" name="Azimuth">315</OPTION>
+        <OPTION type="double" id="SHADING_HEIGHT" name="Height">45</OPTION>
+        <OPTION type="double" id="SHADING_EXAGG" name="Exaggeration">1</OPTION>
+        <OPTION type="double" id="SHADING_MIN" name="Minimum">0</OPTION>
+        <OPTION type="double" id="SHADING_MAX" name="Maximum">1.5</OPTION>
+        <OPTION type="boolean" id="RGB_ALPHA" name="Alpha Channel">false</OPTION>
+        <OPTION type="choice" id="OVERLAY_MODE" name="This Color" index="0">Red</OPTION>
+        <OPTION type="grid_system" id="OVERLAY_R_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>0.000277778</CELLSIZE>
+          <XMIN>-71</XMIN>
+          <YMIN>18</YMIN>
+          <XMAX>-69.99999991999999</XMAX>
+          <YMAX>19.00000008</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_R" name="Red">NOT SET</DATA>
+        <OPTION type="grid_system" id="OVERLAY_G_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>0.000277778</CELLSIZE>
+          <XMIN>-71</XMIN>
+          <YMIN>18</YMIN>
+          <XMAX>-69.99999991999999</XMAX>
+          <YMAX>19.00000008</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_G" name="Green">NOT SET</DATA>
+        <OPTION type="grid_system" id="OVERLAY_B_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>0.000277778</CELLSIZE>
+          <XMIN>-71</XMIN>
+          <YMIN>18</YMIN>
+          <XMAX>-69.99999991999999</XMAX>
+          <YMAX>19.00000008</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_B" name="Blue">NOT SET</DATA>
+      </parameters>
+    </DATASET>
+    <DATASET dataset_id="17903867340000005" type="GRID">
+      <FILE>n18_w071_1arc_v3.sg-grd-z</FILE>
+      <parameters name="n18_w071_1arc_v3">
+        <OPTION type="text" id="OBJECT_NAME" name="Name">n18_w071_1arc_v3</OPTION>
+        <OPTION type="long_text" id="OBJECT_DESC" name="Description"/>
+        <OPTION type="double" id="MAX_SAMPLES" name="Sample Size">7.711722896109126</OPTION>
+        <OPTION type="range" id="OBJECT_NODATA" name="Data Exclusion">-32767; -32767</OPTION>
+        <OPTION type="boolean" id="LEGEND_SHOW" name="Map Legends">true</OPTION>
+        <OPTION type="choice" id="LEGEND_ORIENTATION" name="Orientation" index="0">vertical</OPTION>
+        <OPTION type="choice" id="LEGEND_TITLE" name="Title" index="0">data set</OPTION>
+        <OPTION type="text" id="LEGEND_TITLE_TEXT" name="User Defined">Title</OPTION>
+        <OPTION type="boolean" id="SHOW_ALWAYS" name="Show at all scales">true</OPTION>
+        <OPTION type="range" id="SHOW_RANGE" name="Scale Range">100; 1000</OPTION>
+        <OPTION type="choice" id="DISPLAY_OVERLAY" name="Overlay Mode" index="0">Transparency/Opacity</OPTION>
+        <OPTION type="double" id="DISPLAY_TRANSPARENCY" name="Transparency">0</OPTION>
+        <OPTION type="choice" id="COLORS_TYPE" name="Type" index="3">Graduated Colors</OPTION>
+        <OPTION type="color" id="SINGLE_COLOR" name="Color">R128 G128 B000</OPTION>
+        <OPTION type="static_table" id="LUT" name="Table">
+          <FIELDS>
+            <FIELD type="COLOR">Color</FIELD>
+            <FIELD type="STRING">Name</FIELD>
+            <FIELD type="STRING">Description</FIELD>
+            <FIELD type="DOUBLE">Minimum</FIELD>
+            <FIELD type="DOUBLE">Maximum</FIELD>
+          </FIELDS>
+          <RECORDS>
+            <RECORD>
+              <FIELD>127</FIELD>
+              <FIELD>Class 1</FIELD>
+              <FIELD>First Class</FIELD>
+              <FIELD>0.000000</FIELD>
+              <FIELD>1.000000</FIELD>
+            </RECORD>
+            <RECORD>
+              <FIELD>3394304</FIELD>
+              <FIELD>Class 2</FIELD>
+              <FIELD>Second Class</FIELD>
+              <FIELD>1.000000</FIELD>
+              <FIELD>2.000000</FIELD>
+            </RECORD>
+          </RECORDS>
+        </OPTION>
+        <OPTION type="choice" id="LUT_RESAMPLING" name="Resampling" index="0">Nearest Neighbour</OPTION>
+        <OPTION type="colors" id="METRIC_COLORS" name="Colors">
+          <COLOR>R000 G001 B128</COLOR>
+          <COLOR>R000 G010 B176</COLOR>
+          <COLOR>R000 G079 B245</COLOR>
+          <COLOR>R001 G127 B255</COLOR>
+          <COLOR>R038 G217 B217</COLOR>
+          <COLOR>R128 G255 B128</COLOR>
+          <COLOR>R176 G245 B079</COLOR>
+          <COLOR>R245 G176 B010</COLOR>
+          <COLOR>R255 G128 B001</COLOR>
+          <COLOR>R217 G038 B000</COLOR>
+          <COLOR>R127 G001 B000</COLOR>
+        </OPTION>
+        <OPTION type="choice" id="STRETCH_DEFAULT" name="Adjustment" index="1">Standard Deviation</OPTION>
+        <OPTION type="range" id="STRETCH_LINEAR" name="Linear Percent Stretch">0; 100</OPTION>
+        <OPTION type="double" id="STRETCH_STDDEV" name="Standard Deviation">2</OPTION>
+        <OPTION type="boolean" id="STRETCH_INRANGE" name="Keep in Range">true</OPTION>
+        <OPTION type="range" id="STRETCH_PCTL" name="Percent Clip">1; 99</OPTION>
+        <OPTION type="range" id="METRIC_ZRANGE" name="Range">840.9557285448930; 2449.2678977507194</OPTION>
+        <OPTION type="choice" id="METRIC_SCALE_MODE" name="Scaling" index="0">linear intervals</OPTION>
+        <OPTION type="double" id="METRIC_SCALE_LOG" name="Geometric Interval Factor">1</OPTION>
+        <OPTION type="boolean" id="FILE_CACHE" name="File Cache">false</OPTION>
+        <OPTION type="text" id="OBJECT_Z_UNIT" name="Unit">m</OPTION>
+        <OPTION type="double" id="OBJECT_Z_FACTOR" name="Scaling">1</OPTION>
+        <OPTION type="double" id="OBJECT_Z_OFFSET" name="Offset">0</OPTION>
+        <OPTION type="boolean" id="VALUES_SHOW" name="Show Cell Values">false</OPTION>
+        <OPTION type="font" id="VALUES_FONT" name="Font">
+          <COLOR>R000 G000 B000</COLOR>
+          <FONT>.applesystemuifont 11 utf-8</FONT>
+        </OPTION>
+        <OPTION type="double" id="VALUES_SIZE" name="Size">15</OPTION>
+        <OPTION type="integer" id="VALUES_DECIMALS" name="Decimals">2</OPTION>
+        <OPTION type="choice" id="VALUES_EFFECT" name="Boundary Effect" index="1">full frame</OPTION>
+        <OPTION type="color" id="VALUES_EFFECT_COLOR" name="Color">R255 G255 B255</OPTION>
+        <OPTION type="choice" id="DISPLAY_RESAMPLING" name="Resampling" index="0">Nearest Neighbour</OPTION>
+        <OPTION type="grid_system" id="DISPLAY_ALPHA_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>0.000277778</CELLSIZE>
+          <XMIN>-71</XMIN>
+          <YMIN>18</YMIN>
+          <XMAX>-69.99999991999999</XMAX>
+          <YMAX>19.00000008</YMAX>
+        </OPTION>
+        <DATA type="grid" id="DISPLAY_ALPHA" name="Transparency Band">NOT SET</DATA>
+        <OPTION type="double" id="ALPHA_RANGE.MIN" name="Full Transparency">0</OPTION>
+        <OPTION type="double" id="ALPHA_RANGE.MAX" name="Full Opacity">0</OPTION>
+        <OPTION type="choice" id="DISPLAY_SHADING" name="Shading" index="0">none</OPTION>
+        <OPTION type="double" id="SHADING_AZIMUTH" name="Azimuth">315</OPTION>
+        <OPTION type="double" id="SHADING_HEIGHT" name="Height">45</OPTION>
+        <OPTION type="double" id="SHADING_EXAGG" name="Exaggeration">1</OPTION>
+        <OPTION type="double" id="SHADING_MIN" name="Minimum">0</OPTION>
+        <OPTION type="double" id="SHADING_MAX" name="Maximum">1.5</OPTION>
+        <OPTION type="boolean" id="RGB_ALPHA" name="Alpha Channel">false</OPTION>
+        <OPTION type="choice" id="OVERLAY_MODE" name="This Color" index="0">Red</OPTION>
+        <OPTION type="grid_system" id="OVERLAY_R_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>0.000277778</CELLSIZE>
+          <XMIN>-71</XMIN>
+          <YMIN>18</YMIN>
+          <XMAX>-69.99999991999999</XMAX>
+          <YMAX>19.00000008</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_R" name="Red">NOT SET</DATA>
+        <OPTION type="grid_system" id="OVERLAY_G_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>0.000277778</CELLSIZE>
+          <XMIN>-71</XMIN>
+          <YMIN>18</YMIN>
+          <XMAX>-69.99999991999999</XMAX>
+          <YMAX>19.00000008</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_G" name="Green">NOT SET</DATA>
+        <OPTION type="grid_system" id="OVERLAY_B_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>0.000277778</CELLSIZE>
+          <XMIN>-71</XMIN>
+          <YMIN>18</YMIN>
+          <XMAX>-69.99999991999999</XMAX>
+          <YMAX>19.00000008</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_B" name="Blue">NOT SET</DATA>
+      </parameters>
+    </DATASET>
+    <DATASET dataset_id="17903867340000006" type="GRID">
+      <FILE>n18_w071_1arc_v3_1.sg-grd-z</FILE>
+      <parameters name="n18_w071_1arc_v3">
+        <OPTION type="text" id="OBJECT_NAME" name="Name">n18_w071_1arc_v3</OPTION>
+        <OPTION type="long_text" id="OBJECT_DESC" name="Description"/>
+        <OPTION type="double" id="MAX_SAMPLES" name="Sample Size">7.711709065628513</OPTION>
+        <OPTION type="range" id="OBJECT_NODATA" name="Data Exclusion">-32767; -32767</OPTION>
+        <OPTION type="boolean" id="LEGEND_SHOW" name="Map Legends">true</OPTION>
+        <OPTION type="choice" id="LEGEND_ORIENTATION" name="Orientation" index="0">vertical</OPTION>
+        <OPTION type="choice" id="LEGEND_TITLE" name="Title" index="0">data set</OPTION>
+        <OPTION type="text" id="LEGEND_TITLE_TEXT" name="User Defined">Title</OPTION>
+        <OPTION type="boolean" id="SHOW_ALWAYS" name="Show at all scales">true</OPTION>
+        <OPTION type="range" id="SHOW_RANGE" name="Scale Range">100; 1000</OPTION>
+        <OPTION type="choice" id="DISPLAY_OVERLAY" name="Overlay Mode" index="0">Transparency/Opacity</OPTION>
+        <OPTION type="double" id="DISPLAY_TRANSPARENCY" name="Transparency">0</OPTION>
+        <OPTION type="choice" id="COLORS_TYPE" name="Type" index="3">Graduated Colors</OPTION>
+        <OPTION type="color" id="SINGLE_COLOR" name="Color">R128 G128 B000</OPTION>
+        <OPTION type="static_table" id="LUT" name="Table">
+          <FIELDS>
+            <FIELD type="COLOR">Color</FIELD>
+            <FIELD type="STRING">Name</FIELD>
+            <FIELD type="STRING">Description</FIELD>
+            <FIELD type="DOUBLE">Minimum</FIELD>
+            <FIELD type="DOUBLE">Maximum</FIELD>
+          </FIELDS>
+          <RECORDS>
+            <RECORD>
+              <FIELD>127</FIELD>
+              <FIELD>Class 1</FIELD>
+              <FIELD>First Class</FIELD>
+              <FIELD>0.000000</FIELD>
+              <FIELD>1.000000</FIELD>
+            </RECORD>
+            <RECORD>
+              <FIELD>3394304</FIELD>
+              <FIELD>Class 2</FIELD>
+              <FIELD>Second Class</FIELD>
+              <FIELD>1.000000</FIELD>
+              <FIELD>2.000000</FIELD>
+            </RECORD>
+          </RECORDS>
+        </OPTION>
+        <OPTION type="choice" id="LUT_RESAMPLING" name="Resampling" index="0">Nearest Neighbour</OPTION>
+        <OPTION type="colors" id="METRIC_COLORS" name="Colors">
+          <COLOR>R000 G001 B128</COLOR>
+          <COLOR>R000 G010 B176</COLOR>
+          <COLOR>R000 G079 B245</COLOR>
+          <COLOR>R001 G127 B255</COLOR>
+          <COLOR>R038 G217 B217</COLOR>
+          <COLOR>R128 G255 B128</COLOR>
+          <COLOR>R176 G245 B079</COLOR>
+          <COLOR>R245 G176 B010</COLOR>
+          <COLOR>R255 G128 B001</COLOR>
+          <COLOR>R217 G038 B000</COLOR>
+          <COLOR>R127 G001 B000</COLOR>
+        </OPTION>
+        <OPTION type="choice" id="STRETCH_DEFAULT" name="Adjustment" index="1">Standard Deviation</OPTION>
+        <OPTION type="range" id="STRETCH_LINEAR" name="Linear Percent Stretch">0; 100</OPTION>
+        <OPTION type="double" id="STRETCH_STDDEV" name="Standard Deviation">2</OPTION>
+        <OPTION type="boolean" id="STRETCH_INRANGE" name="Keep in Range">true</OPTION>
+        <OPTION type="range" id="STRETCH_PCTL" name="Percent Clip">1; 99</OPTION>
+        <OPTION type="range" id="METRIC_ZRANGE" name="Range">841.7501690298020; 2449.0563886453147</OPTION>
+        <OPTION type="choice" id="METRIC_SCALE_MODE" name="Scaling" index="0">linear intervals</OPTION>
+        <OPTION type="double" id="METRIC_SCALE_LOG" name="Geometric Interval Factor">1</OPTION>
+        <OPTION type="boolean" id="FILE_CACHE" name="File Cache">false</OPTION>
+        <OPTION type="text" id="OBJECT_Z_UNIT" name="Unit">m</OPTION>
+        <OPTION type="double" id="OBJECT_Z_FACTOR" name="Scaling">1</OPTION>
+        <OPTION type="double" id="OBJECT_Z_OFFSET" name="Offset">0</OPTION>
+        <OPTION type="boolean" id="VALUES_SHOW" name="Show Cell Values">false</OPTION>
+        <OPTION type="font" id="VALUES_FONT" name="Font">
+          <COLOR>R000 G000 B000</COLOR>
+          <FONT>.applesystemuifont 11 utf-8</FONT>
+        </OPTION>
+        <OPTION type="double" id="VALUES_SIZE" name="Size">15</OPTION>
+        <OPTION type="integer" id="VALUES_DECIMALS" name="Decimals">2</OPTION>
+        <OPTION type="choice" id="VALUES_EFFECT" name="Boundary Effect" index="1">full frame</OPTION>
+        <OPTION type="color" id="VALUES_EFFECT_COLOR" name="Color">R255 G255 B255</OPTION>
+        <OPTION type="choice" id="DISPLAY_RESAMPLING" name="Resampling" index="0">Nearest Neighbour</OPTION>
+        <OPTION type="grid_system" id="DISPLAY_ALPHA_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>0.000277778</CELLSIZE>
+          <XMIN>-71</XMIN>
+          <YMIN>18</YMIN>
+          <XMAX>-69.99999991999999</XMAX>
+          <YMAX>19.00000008</YMAX>
+        </OPTION>
+        <DATA type="grid" id="DISPLAY_ALPHA" name="Transparency Band">NOT SET</DATA>
+        <OPTION type="double" id="ALPHA_RANGE.MIN" name="Full Transparency">0</OPTION>
+        <OPTION type="double" id="ALPHA_RANGE.MAX" name="Full Opacity">0</OPTION>
+        <OPTION type="choice" id="DISPLAY_SHADING" name="Shading" index="0">none</OPTION>
+        <OPTION type="double" id="SHADING_AZIMUTH" name="Azimuth">315</OPTION>
+        <OPTION type="double" id="SHADING_HEIGHT" name="Height">45</OPTION>
+        <OPTION type="double" id="SHADING_EXAGG" name="Exaggeration">1</OPTION>
+        <OPTION type="double" id="SHADING_MIN" name="Minimum">0</OPTION>
+        <OPTION type="double" id="SHADING_MAX" name="Maximum">1.5</OPTION>
+        <OPTION type="boolean" id="RGB_ALPHA" name="Alpha Channel">false</OPTION>
+        <OPTION type="choice" id="OVERLAY_MODE" name="This Color" index="0">Red</OPTION>
+        <OPTION type="grid_system" id="OVERLAY_R_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>0.000277778</CELLSIZE>
+          <XMIN>-71</XMIN>
+          <YMIN>18</YMIN>
+          <XMAX>-69.99999991999999</XMAX>
+          <YMAX>19.00000008</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_R" name="Red">NOT SET</DATA>
+        <OPTION type="grid_system" id="OVERLAY_G_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>0.000277778</CELLSIZE>
+          <XMIN>-71</XMIN>
+          <YMIN>18</YMIN>
+          <XMAX>-69.99999991999999</XMAX>
+          <YMAX>19.00000008</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_G" name="Green">NOT SET</DATA>
+        <OPTION type="grid_system" id="OVERLAY_B_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>0.000277778</CELLSIZE>
+          <XMIN>-71</XMIN>
+          <YMIN>18</YMIN>
+          <XMAX>-69.99999991999999</XMAX>
+          <YMAX>19.00000008</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_B" name="Blue">NOT SET</DATA>
+      </parameters>
+    </DATASET>
+    <DATASET dataset_id="17903867340000007" type="GRID">
+      <FILE>n18_w071_1arc_v3 [no sinks].sg-grd-z</FILE>
+      <parameters name="n18_w071_1arc_v3 [no sinks]">
+        <OPTION type="text" id="OBJECT_NAME" name="Name">n18_w071_1arc_v3 [no sinks]</OPTION>
+        <OPTION type="long_text" id="OBJECT_DESC" name="Description"/>
+        <OPTION type="double" id="MAX_SAMPLES" name="Sample Size">67.36587958618487</OPTION>
+        <OPTION type="range" id="OBJECT_NODATA" name="Data Exclusion">-99999; -99999</OPTION>
+        <OPTION type="boolean" id="LEGEND_SHOW" name="Map Legends">true</OPTION>
+        <OPTION type="choice" id="LEGEND_ORIENTATION" name="Orientation" index="0">vertical</OPTION>
+        <OPTION type="choice" id="LEGEND_TITLE" name="Title" index="0">data set</OPTION>
+        <OPTION type="text" id="LEGEND_TITLE_TEXT" name="User Defined">Title</OPTION>
+        <OPTION type="boolean" id="SHOW_ALWAYS" name="Show at all scales">true</OPTION>
+        <OPTION type="range" id="SHOW_RANGE" name="Scale Range">100; 1000</OPTION>
+        <OPTION type="choice" id="DISPLAY_OVERLAY" name="Overlay Mode" index="0">Transparency/Opacity</OPTION>
+        <OPTION type="double" id="DISPLAY_TRANSPARENCY" name="Transparency">0</OPTION>
+        <OPTION type="choice" id="COLORS_TYPE" name="Type" index="3">Graduated Colors</OPTION>
+        <OPTION type="color" id="SINGLE_COLOR" name="Color">R128 G000 B000</OPTION>
+        <OPTION type="static_table" id="LUT" name="Table">
+          <FIELDS>
+            <FIELD type="COLOR">Color</FIELD>
+            <FIELD type="STRING">Name</FIELD>
+            <FIELD type="STRING">Description</FIELD>
+            <FIELD type="DOUBLE">Minimum</FIELD>
+            <FIELD type="DOUBLE">Maximum</FIELD>
+          </FIELDS>
+          <RECORDS>
+            <RECORD>
+              <FIELD>8323136</FIELD>
+              <FIELD>Class 1</FIELD>
+              <FIELD>First Class</FIELD>
+              <FIELD>0.000000</FIELD>
+              <FIELD>1.000000</FIELD>
+            </RECORD>
+            <RECORD>
+              <FIELD>57215</FIELD>
+              <FIELD>Class 2</FIELD>
+              <FIELD>Second Class</FIELD>
+              <FIELD>1.000000</FIELD>
+              <FIELD>2.000000</FIELD>
+            </RECORD>
+          </RECORDS>
+        </OPTION>
+        <OPTION type="choice" id="LUT_RESAMPLING" name="Resampling" index="0">Nearest Neighbour</OPTION>
+        <OPTION type="colors" id="METRIC_COLORS" name="Colors">
+          <COLOR>R000 G001 B128</COLOR>
+          <COLOR>R000 G010 B176</COLOR>
+          <COLOR>R000 G079 B245</COLOR>
+          <COLOR>R001 G127 B255</COLOR>
+          <COLOR>R038 G217 B217</COLOR>
+          <COLOR>R128 G255 B128</COLOR>
+          <COLOR>R176 G245 B079</COLOR>
+          <COLOR>R245 G176 B010</COLOR>
+          <COLOR>R255 G128 B001</COLOR>
+          <COLOR>R217 G038 B000</COLOR>
+          <COLOR>R127 G001 B000</COLOR>
+        </OPTION>
+        <OPTION type="choice" id="STRETCH_DEFAULT" name="Adjustment" index="1">Standard Deviation</OPTION>
+        <OPTION type="range" id="STRETCH_LINEAR" name="Linear Percent Stretch">0; 100</OPTION>
+        <OPTION type="double" id="STRETCH_STDDEV" name="Standard Deviation">2</OPTION>
+        <OPTION type="boolean" id="STRETCH_INRANGE" name="Keep in Range">true</OPTION>
+        <OPTION type="range" id="STRETCH_PCTL" name="Percent Clip">1; 99</OPTION>
+        <OPTION type="range" id="METRIC_ZRANGE" name="Range">841.7051749611252; 2449.0842480071483</OPTION>
+        <OPTION type="choice" id="METRIC_SCALE_MODE" name="Scaling" index="0">linear intervals</OPTION>
+        <OPTION type="double" id="METRIC_SCALE_LOG" name="Geometric Interval Factor">1</OPTION>
+        <OPTION type="boolean" id="FILE_CACHE" name="File Cache">false</OPTION>
+        <OPTION type="text" id="OBJECT_Z_UNIT" name="Unit"/>
+        <OPTION type="double" id="OBJECT_Z_FACTOR" name="Scaling">1</OPTION>
+        <OPTION type="double" id="OBJECT_Z_OFFSET" name="Offset">0</OPTION>
+        <OPTION type="boolean" id="VALUES_SHOW" name="Show Cell Values">false</OPTION>
+        <OPTION type="font" id="VALUES_FONT" name="Font">
+          <COLOR>R000 G000 B000</COLOR>
+          <FONT>.applesystemuifont 11 utf-8</FONT>
+        </OPTION>
+        <OPTION type="double" id="VALUES_SIZE" name="Size">15</OPTION>
+        <OPTION type="integer" id="VALUES_DECIMALS" name="Decimals">2</OPTION>
+        <OPTION type="choice" id="VALUES_EFFECT" name="Boundary Effect" index="1">full frame</OPTION>
+        <OPTION type="color" id="VALUES_EFFECT_COLOR" name="Color">R255 G255 B255</OPTION>
+        <OPTION type="choice" id="DISPLAY_RESAMPLING" name="Resampling" index="0">Nearest Neighbour</OPTION>
+        <OPTION type="grid_system" id="DISPLAY_ALPHA_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>31</CELLSIZE>
+          <XMIN>301475</XMIN>
+          <YMIN>2065995</YMIN>
+          <XMAX>341217</XMAX>
+          <YMAX>2101831</YMAX>
+        </OPTION>
+        <DATA type="grid" id="DISPLAY_ALPHA" name="Transparency Band">NOT SET</DATA>
+        <OPTION type="double" id="ALPHA_RANGE.MIN" name="Full Transparency">0</OPTION>
+        <OPTION type="double" id="ALPHA_RANGE.MAX" name="Full Opacity">0</OPTION>
+        <OPTION type="choice" id="DISPLAY_SHADING" name="Shading" index="0">none</OPTION>
+        <OPTION type="double" id="SHADING_AZIMUTH" name="Azimuth">315</OPTION>
+        <OPTION type="double" id="SHADING_HEIGHT" name="Height">45</OPTION>
+        <OPTION type="double" id="SHADING_EXAGG" name="Exaggeration">1</OPTION>
+        <OPTION type="double" id="SHADING_MIN" name="Minimum">0</OPTION>
+        <OPTION type="double" id="SHADING_MAX" name="Maximum">1.5</OPTION>
+        <OPTION type="boolean" id="RGB_ALPHA" name="Alpha Channel">false</OPTION>
+        <OPTION type="choice" id="OVERLAY_MODE" name="This Color" index="0">Red</OPTION>
+        <OPTION type="grid_system" id="OVERLAY_R_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>31</CELLSIZE>
+          <XMIN>301475</XMIN>
+          <YMIN>2065995</YMIN>
+          <XMAX>341217</XMAX>
+          <YMAX>2101831</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_R" name="Red">NOT SET</DATA>
+        <OPTION type="grid_system" id="OVERLAY_G_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>31</CELLSIZE>
+          <XMIN>301475</XMIN>
+          <YMIN>2065995</YMIN>
+          <XMAX>341217</XMAX>
+          <YMAX>2101831</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_G" name="Green">NOT SET</DATA>
+        <OPTION type="grid_system" id="OVERLAY_B_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>31</CELLSIZE>
+          <XMIN>301475</XMIN>
+          <YMIN>2065995</YMIN>
+          <XMAX>341217</XMAX>
+          <YMAX>2101831</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_B" name="Blue">NOT SET</DATA>
+      </parameters>
+    </DATASET>
+    <DATASET dataset_id="17903867340000008" type="GRID">
+      <FILE>Flow Directions.sg-grd-z</FILE>
+      <parameters name="Flow Directions">
+        <OPTION type="text" id="OBJECT_NAME" name="Name">Flow Directions</OPTION>
+        <OPTION type="long_text" id="OBJECT_DESC" name="Description"/>
+        <OPTION type="double" id="MAX_SAMPLES" name="Sample Size">67.36587958618487</OPTION>
+        <OPTION type="range" id="OBJECT_NODATA" name="Data Exclusion">-99999; -99999</OPTION>
+        <OPTION type="boolean" id="LEGEND_SHOW" name="Map Legends">true</OPTION>
+        <OPTION type="choice" id="LEGEND_ORIENTATION" name="Orientation" index="0">vertical</OPTION>
+        <OPTION type="choice" id="LEGEND_TITLE" name="Title" index="0">data set</OPTION>
+        <OPTION type="text" id="LEGEND_TITLE_TEXT" name="User Defined">Title</OPTION>
+        <OPTION type="boolean" id="SHOW_ALWAYS" name="Show at all scales">true</OPTION>
+        <OPTION type="range" id="SHOW_RANGE" name="Scale Range">100; 1000</OPTION>
+        <OPTION type="choice" id="DISPLAY_OVERLAY" name="Overlay Mode" index="0">Transparency/Opacity</OPTION>
+        <OPTION type="double" id="DISPLAY_TRANSPARENCY" name="Transparency">70</OPTION>
+        <OPTION type="choice" id="COLORS_TYPE" name="Type" index="3">Graduated Colors</OPTION>
+        <OPTION type="color" id="SINGLE_COLOR" name="Color">R000 G128 B128</OPTION>
+        <OPTION type="static_table" id="LUT" name="Table">
+          <FIELDS>
+            <FIELD type="COLOR">Color</FIELD>
+            <FIELD type="STRING">Name</FIELD>
+            <FIELD type="STRING">Description</FIELD>
+            <FIELD type="DOUBLE">Minimum</FIELD>
+            <FIELD type="DOUBLE">Maximum</FIELD>
+          </FIELDS>
+          <RECORDS>
+            <RECORD>
+              <FIELD>14155795</FIELD>
+              <FIELD>Class 1</FIELD>
+              <FIELD>First Class</FIELD>
+              <FIELD>0.000000</FIELD>
+              <FIELD>1.000000</FIELD>
+            </RECORD>
+            <RECORD>
+              <FIELD>58879</FIELD>
+              <FIELD>Class 2</FIELD>
+              <FIELD>Second Class</FIELD>
+              <FIELD>1.000000</FIELD>
+              <FIELD>2.000000</FIELD>
+            </RECORD>
+          </RECORDS>
+        </OPTION>
+        <OPTION type="choice" id="LUT_RESAMPLING" name="Resampling" index="0">Nearest Neighbour</OPTION>
+        <OPTION type="colors" id="METRIC_COLORS" name="Colors">
+          <COLOR>R000 G001 B128</COLOR>
+          <COLOR>R000 G010 B176</COLOR>
+          <COLOR>R000 G079 B245</COLOR>
+          <COLOR>R001 G127 B255</COLOR>
+          <COLOR>R038 G217 B217</COLOR>
+          <COLOR>R128 G255 B128</COLOR>
+          <COLOR>R176 G245 B079</COLOR>
+          <COLOR>R245 G176 B010</COLOR>
+          <COLOR>R255 G128 B001</COLOR>
+          <COLOR>R217 G038 B000</COLOR>
+          <COLOR>R127 G001 B000</COLOR>
+        </OPTION>
+        <OPTION type="choice" id="STRETCH_DEFAULT" name="Adjustment" index="1">Standard Deviation</OPTION>
+        <OPTION type="range" id="STRETCH_LINEAR" name="Linear Percent Stretch">0; 100</OPTION>
+        <OPTION type="double" id="STRETCH_STDDEV" name="Standard Deviation">2</OPTION>
+        <OPTION type="boolean" id="STRETCH_INRANGE" name="Keep in Range">true</OPTION>
+        <OPTION type="range" id="STRETCH_PCTL" name="Percent Clip">1; 99</OPTION>
+        <OPTION type="range" id="METRIC_ZRANGE" name="Range">-1; 7</OPTION>
+        <OPTION type="choice" id="METRIC_SCALE_MODE" name="Scaling" index="0">linear intervals</OPTION>
+        <OPTION type="double" id="METRIC_SCALE_LOG" name="Geometric Interval Factor">1</OPTION>
+        <OPTION type="boolean" id="FILE_CACHE" name="File Cache">false</OPTION>
+        <OPTION type="text" id="OBJECT_Z_UNIT" name="Unit"/>
+        <OPTION type="double" id="OBJECT_Z_FACTOR" name="Scaling">1</OPTION>
+        <OPTION type="double" id="OBJECT_Z_OFFSET" name="Offset">0</OPTION>
+        <OPTION type="boolean" id="VALUES_SHOW" name="Show Cell Values">false</OPTION>
+        <OPTION type="font" id="VALUES_FONT" name="Font">
+          <COLOR>R000 G000 B000</COLOR>
+          <FONT>.applesystemuifont 11 utf-8</FONT>
+        </OPTION>
+        <OPTION type="double" id="VALUES_SIZE" name="Size">15</OPTION>
+        <OPTION type="integer" id="VALUES_DECIMALS" name="Decimals">2</OPTION>
+        <OPTION type="choice" id="VALUES_EFFECT" name="Boundary Effect" index="1">full frame</OPTION>
+        <OPTION type="color" id="VALUES_EFFECT_COLOR" name="Color">R255 G255 B255</OPTION>
+        <OPTION type="choice" id="DISPLAY_RESAMPLING" name="Resampling" index="0">Nearest Neighbour</OPTION>
+        <OPTION type="grid_system" id="DISPLAY_ALPHA_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>31</CELLSIZE>
+          <XMIN>301475</XMIN>
+          <YMIN>2065995</YMIN>
+          <XMAX>341217</XMAX>
+          <YMAX>2101831</YMAX>
+        </OPTION>
+        <DATA type="grid" id="DISPLAY_ALPHA" name="Transparency Band">NOT SET</DATA>
+        <OPTION type="double" id="ALPHA_RANGE.MIN" name="Full Transparency">0</OPTION>
+        <OPTION type="double" id="ALPHA_RANGE.MAX" name="Full Opacity">0</OPTION>
+        <OPTION type="choice" id="DISPLAY_SHADING" name="Shading" index="0">none</OPTION>
+        <OPTION type="double" id="SHADING_AZIMUTH" name="Azimuth">315</OPTION>
+        <OPTION type="double" id="SHADING_HEIGHT" name="Height">45</OPTION>
+        <OPTION type="double" id="SHADING_EXAGG" name="Exaggeration">1</OPTION>
+        <OPTION type="double" id="SHADING_MIN" name="Minimum">0</OPTION>
+        <OPTION type="double" id="SHADING_MAX" name="Maximum">1.5</OPTION>
+        <OPTION type="boolean" id="RGB_ALPHA" name="Alpha Channel">false</OPTION>
+        <OPTION type="choice" id="OVERLAY_MODE" name="This Color" index="0">Red</OPTION>
+        <OPTION type="grid_system" id="OVERLAY_R_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>31</CELLSIZE>
+          <XMIN>301475</XMIN>
+          <YMIN>2065995</YMIN>
+          <XMAX>341217</XMAX>
+          <YMAX>2101831</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_R" name="Red">NOT SET</DATA>
+        <OPTION type="grid_system" id="OVERLAY_G_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>31</CELLSIZE>
+          <XMIN>301475</XMIN>
+          <YMIN>2065995</YMIN>
+          <XMAX>341217</XMAX>
+          <YMAX>2101831</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_G" name="Green">NOT SET</DATA>
+        <OPTION type="grid_system" id="OVERLAY_B_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>31</CELLSIZE>
+          <XMIN>301475</XMIN>
+          <YMIN>2065995</YMIN>
+          <XMAX>341217</XMAX>
+          <YMAX>2101831</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_B" name="Blue">NOT SET</DATA>
+      </parameters>
+    </DATASET>
+    <DATASET dataset_id="17903867340000009" type="GRID">
+      <FILE>Watershed Basins.sg-grd-z</FILE>
+      <parameters name="Watershed Basins">
+        <OPTION type="text" id="OBJECT_NAME" name="Name">Watershed Basins</OPTION>
+        <OPTION type="long_text" id="OBJECT_DESC" name="Description"/>
+        <OPTION type="double" id="MAX_SAMPLES" name="Sample Size">67.36587958618487</OPTION>
+        <OPTION type="range" id="OBJECT_NODATA" name="Data Exclusion">-2147483647; -2147483647</OPTION>
+        <OPTION type="boolean" id="LEGEND_SHOW" name="Map Legends">true</OPTION>
+        <OPTION type="choice" id="LEGEND_ORIENTATION" name="Orientation" index="0">vertical</OPTION>
+        <OPTION type="choice" id="LEGEND_TITLE" name="Title" index="0">data set</OPTION>
+        <OPTION type="text" id="LEGEND_TITLE_TEXT" name="User Defined">Title</OPTION>
+        <OPTION type="boolean" id="SHOW_ALWAYS" name="Show at all scales">true</OPTION>
+        <OPTION type="range" id="SHOW_RANGE" name="Scale Range">100; 1000</OPTION>
+        <OPTION type="choice" id="DISPLAY_OVERLAY" name="Overlay Mode" index="0">Transparency/Opacity</OPTION>
+        <OPTION type="double" id="DISPLAY_TRANSPARENCY" name="Transparency">50</OPTION>
+        <OPTION type="choice" id="COLORS_TYPE" name="Type" index="3">Graduated Colors</OPTION>
+        <OPTION type="color" id="SINGLE_COLOR" name="Color">R128 G000 B128</OPTION>
+        <OPTION type="static_table" id="LUT" name="Table">
+          <FIELDS>
+            <FIELD type="COLOR">Color</FIELD>
+            <FIELD type="STRING">Name</FIELD>
+            <FIELD type="STRING">Description</FIELD>
+            <FIELD type="DOUBLE">Minimum</FIELD>
+            <FIELD type="DOUBLE">Maximum</FIELD>
+          </FIELDS>
+          <RECORDS>
+            <RECORD>
+              <FIELD>14155795</FIELD>
+              <FIELD>Class 1</FIELD>
+              <FIELD>First Class</FIELD>
+              <FIELD>0.000000</FIELD>
+              <FIELD>1.000000</FIELD>
+            </RECORD>
+            <RECORD>
+              <FIELD>58879</FIELD>
+              <FIELD>Class 2</FIELD>
+              <FIELD>Second Class</FIELD>
+              <FIELD>1.000000</FIELD>
+              <FIELD>2.000000</FIELD>
+            </RECORD>
+          </RECORDS>
+        </OPTION>
+        <OPTION type="choice" id="LUT_RESAMPLING" name="Resampling" index="0">Nearest Neighbour</OPTION>
+        <OPTION type="colors" id="METRIC_COLORS" name="Colors">
+          <COLOR>R000 G001 B128</COLOR>
+          <COLOR>R000 G010 B176</COLOR>
+          <COLOR>R000 G079 B245</COLOR>
+          <COLOR>R001 G127 B255</COLOR>
+          <COLOR>R038 G217 B217</COLOR>
+          <COLOR>R128 G255 B128</COLOR>
+          <COLOR>R176 G245 B079</COLOR>
+          <COLOR>R245 G176 B010</COLOR>
+          <COLOR>R255 G128 B001</COLOR>
+          <COLOR>R217 G038 B000</COLOR>
+          <COLOR>R127 G001 B000</COLOR>
+        </OPTION>
+        <OPTION type="choice" id="STRETCH_DEFAULT" name="Adjustment" index="1">Standard Deviation</OPTION>
+        <OPTION type="range" id="STRETCH_LINEAR" name="Linear Percent Stretch">0; 100</OPTION>
+        <OPTION type="double" id="STRETCH_STDDEV" name="Standard Deviation">2</OPTION>
+        <OPTION type="boolean" id="STRETCH_INRANGE" name="Keep in Range">true</OPTION>
+        <OPTION type="range" id="STRETCH_PCTL" name="Percent Clip">1; 99</OPTION>
+        <OPTION type="range" id="METRIC_ZRANGE" name="Range">154.8830004369165; 5601.9563646776960</OPTION>
+        <OPTION type="choice" id="METRIC_SCALE_MODE" name="Scaling" index="0">linear intervals</OPTION>
+        <OPTION type="double" id="METRIC_SCALE_LOG" name="Geometric Interval Factor">1</OPTION>
+        <OPTION type="boolean" id="FILE_CACHE" name="File Cache">false</OPTION>
+        <OPTION type="text" id="OBJECT_Z_UNIT" name="Unit"/>
+        <OPTION type="double" id="OBJECT_Z_FACTOR" name="Scaling">1</OPTION>
+        <OPTION type="double" id="OBJECT_Z_OFFSET" name="Offset">0</OPTION>
+        <OPTION type="boolean" id="VALUES_SHOW" name="Show Cell Values">false</OPTION>
+        <OPTION type="font" id="VALUES_FONT" name="Font">
+          <COLOR>R000 G000 B000</COLOR>
+          <FONT>.applesystemuifont 11 utf-8</FONT>
+        </OPTION>
+        <OPTION type="double" id="VALUES_SIZE" name="Size">15</OPTION>
+        <OPTION type="integer" id="VALUES_DECIMALS" name="Decimals">2</OPTION>
+        <OPTION type="choice" id="VALUES_EFFECT" name="Boundary Effect" index="1">full frame</OPTION>
+        <OPTION type="color" id="VALUES_EFFECT_COLOR" name="Color">R255 G255 B255</OPTION>
+        <OPTION type="choice" id="DISPLAY_RESAMPLING" name="Resampling" index="0">Nearest Neighbour</OPTION>
+        <OPTION type="grid_system" id="DISPLAY_ALPHA_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>31</CELLSIZE>
+          <XMIN>301475</XMIN>
+          <YMIN>2065995</YMIN>
+          <XMAX>341217</XMAX>
+          <YMAX>2101831</YMAX>
+        </OPTION>
+        <DATA type="grid" id="DISPLAY_ALPHA" name="Transparency Band">NOT SET</DATA>
+        <OPTION type="double" id="ALPHA_RANGE.MIN" name="Full Transparency">0</OPTION>
+        <OPTION type="double" id="ALPHA_RANGE.MAX" name="Full Opacity">0</OPTION>
+        <OPTION type="choice" id="DISPLAY_SHADING" name="Shading" index="0">none</OPTION>
+        <OPTION type="double" id="SHADING_AZIMUTH" name="Azimuth">315</OPTION>
+        <OPTION type="double" id="SHADING_HEIGHT" name="Height">45</OPTION>
+        <OPTION type="double" id="SHADING_EXAGG" name="Exaggeration">1</OPTION>
+        <OPTION type="double" id="SHADING_MIN" name="Minimum">0</OPTION>
+        <OPTION type="double" id="SHADING_MAX" name="Maximum">1.5</OPTION>
+        <OPTION type="boolean" id="RGB_ALPHA" name="Alpha Channel">false</OPTION>
+        <OPTION type="choice" id="OVERLAY_MODE" name="This Color" index="0">Red</OPTION>
+        <OPTION type="grid_system" id="OVERLAY_R_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>31</CELLSIZE>
+          <XMIN>301475</XMIN>
+          <YMIN>2065995</YMIN>
+          <XMAX>341217</XMAX>
+          <YMAX>2101831</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_R" name="Red">NOT SET</DATA>
+        <OPTION type="grid_system" id="OVERLAY_G_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>31</CELLSIZE>
+          <XMIN>301475</XMIN>
+          <YMIN>2065995</YMIN>
+          <XMAX>341217</XMAX>
+          <YMAX>2101831</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_G" name="Green">NOT SET</DATA>
+        <OPTION type="grid_system" id="OVERLAY_B_GRIDSYSTEM" name="Grid system">
+          <CELLSIZE>31</CELLSIZE>
+          <XMIN>301475</XMIN>
+          <YMIN>2065995</YMIN>
+          <XMAX>341217</XMAX>
+          <YMAX>2101831</YMAX>
+        </OPTION>
+        <DATA type="grid" id="OVERLAY_B" name="Blue">NOT SET</DATA>
+      </parameters>
+    </DATASET>
   </DATA>
   <MAPS>
     <parameters name="Maps">
@@ -303,10 +1402,10 @@
         <PROJ>+proj=longlat +datum=WGS84 +no_defs +type=crs</PROJ>
         <CODE>-1</CODE>
       </PROJECTION>
-      <XMIN>-72.00388336099996</XMIN>
-      <XMAX>-68.32263946599994</XMAX>
-      <YMIN>17.470139000000131</YMIN>
-      <YMAX>19.932361604000164</YMAX>
+      <XMIN>-71.04494803655486</XMIN>
+      <XMAX>-70.12463706280484</XMAX>
+      <YMIN>18.66132932881814</YMIN>
+      <YMAX>19.27688497981815</YMAX>
       <parameters name="">
         <OPTION type="text" id="NAME" name="Name"> 1. gadm41_DOM_1</OPTION>
         <OPTION type="choice" id="BG_COLOR" name="Background Color" index="0">system</OPTION>
@@ -419,6 +1518,26 @@
           <PROJECT>false</PROJECT>
           <PROJECT_AREA>false</PROJECT_AREA>
           <FITCOLORS>false</FITCOLORS>../gadm41_DOM_shp/gadm41_DOM_1.shp</FILE>
+        <FILE dataset_id="17903867340000001">
+          <SHOW>true</SHOW>
+          <PROJECT>false</PROJECT>
+          <PROJECT_AREA>false</PROJECT_AREA>
+          <FITCOLORS>false</FITCOLORS>gadm41_DOM_1 [Selection].shp</FILE>
+        <FILE dataset_id="17903867340000009">
+          <SHOW>true</SHOW>
+          <PROJECT>true</PROJECT>
+          <PROJECT_AREA>false</PROJECT_AREA>
+          <FITCOLORS>false</FITCOLORS>Watershed Basins.sg-grd-z</FILE>
+        <FILE dataset_id="17903867340000003">
+          <SHOW>true</SHOW>
+          <PROJECT>true</PROJECT>
+          <PROJECT_AREA>false</PROJECT_AREA>
+          <FITCOLORS>false</FITCOLORS>Channels.shp</FILE>
+        <FILE dataset_id="17903867340000008">
+          <SHOW>true</SHOW>
+          <PROJECT>true</PROJECT>
+          <PROJECT_AREA>false</PROJECT_AREA>
+          <FITCOLORS>false</FITCOLORS>Flow Directions.sg-grd-z</FILE>
         <FILE dataset_id="17903833400000002">
           <SHOW>true</SHOW>
           <PROJECT>false</PROJECT>

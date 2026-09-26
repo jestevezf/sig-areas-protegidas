@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGA_METADATA>
+  <DATABASE>
+    <FIELDS>
+      <FIELD TYPE="INTEGER">SEGMENT_ID</FIELD>
+      <FIELD TYPE="INTEGER">NODE_A</FIELD>
+      <FIELD TYPE="INTEGER">NODE_B</FIELD>
+      <FIELD TYPE="INTEGER">BASIN</FIELD>
+      <FIELD TYPE="INTEGER">ORDER</FIELD>
+      <FIELD TYPE="INTEGER">ORDER_CELL</FIELD>
+      <FIELD TYPE="DOUBLE">LENGTH</FIELD>
+    </FIELDS>
+  </DATABASE>
+  <SOURCE></SOURCE>
+  <HISTORY saga-version="9.13.0">
+    <TOOL library="ta_channels" id="5" name="Channel Network and Drainage Basins">
+      <OPTION type="grid_system" id="PARAMETERS_GRID_SYSTEM" name="Grid System">
+        <CELLSIZE>31</CELLSIZE>
+        <XMIN>301475</XMIN>
+        <YMIN>2065995</YMIN>
+        <XMAX>341217</XMAX>
+        <YMAX>2101831</YMAX>
+      </OPTION>
+      <OPTION type="integer" id="THRESHOLD" name="Threshold">5</OPTION>
+      <OPTION type="boolean" id="SUBBASINS" name="Subbasins">true</OPTION>
+      <INPUT type="grid" id="DEM" name="Elevation" system="PARAMETERS_GRID_SYSTEM">
+        <TOOL library="ta_preprocessor" id="4" name="Fill Sinks (Wang &amp; Liu)">
+          <OPTION type="grid_system" id="PARAMETERS_GRID_SYSTEM" name="Grid System">
+            <CELLSIZE>31</CELLSIZE>
+            <XMIN>301475</XMIN>
+            <YMIN>2065995</YMIN>
+            <XMAX>341217</XMAX>
+            <YMAX>2101831</YMAX>
+          </OPTION>
+          <OPTION type="double" id="MINSLOPE" name="Minimum Slope [Degree]">0.1</OPTION>
+          <INPUT type="grid" id="ELEV" name="DEM" system="PARAMETERS_GRID_SYSTEM">
+            <TOOL library="pj_proj4" id="4" name="Coordinate Transformation (Grid)">
+              <OPTION type="text" id="CRS_STRING" name="Definition String">+proj=utm +zone=19 +datum=WGS84 +units=m +no_defs </OPTION>
+              <OPTION type="choice" id="CRS_DISPLAY" name="Display Definition as..." index="0">PROJ</OPTION>
+              <OPTION type="integer" id="CRS_CODE" name="Authority Code">32619</OPTION>
+              <OPTION type="text" id="CRS_AUTHORITY" name="Authority">EPSG</OPTION>
+              <OPTION type="file" id="CRS_FILE" name="Well Known Text File"/>
+              <OPTION type="choice" id="CRS_GEOGCS" name="Geographic Coordinate Systems" index="0">&lt;select&gt;</OPTION>
+              <OPTION type="choice" id="CRS_PROJCS" name="Projected Coordinate Systems" index="6642">WGS 84 / UTM zone 19N</OPTION>
+              <parameters name="Pick from Data Set" id="CRS_PICKER" type="parameters">
+                <OPTION type="grid_system" id="CRS_GRID_GRIDSYSTEM" name="Grid system" parms="CRS_PICKER">
+                  <CELLSIZE>0</CELLSIZE>
+                  <XMIN>0</XMIN>
+                  <YMIN>0</YMIN>
+                  <XMAX>0</XMAX>
+                  <YMAX>0</YMAX>
+                </OPTION>
+                <DATA type="grid" id="CRS_GRID" name="Grid" parms="CRS_PICKER">NOT SET</DATA>
+                <DATA type="shapes" id="CRS_SHAPES" name="Shapes" parms="CRS_PICKER">NOT SET</DATA>
+              </parameters>
+              <parameters name="Customize" id="CRS_DIALOG" type="parameters">
+                <OPTION type="choice" id="PROJ_TYPE" name="Projection Type" parms="CRS_DIALOG" index="155">Universal Transverse Mercator (UTM)</OPTION>
+                <OPTION type="choice" id="DATUM_DEF" name="Datum Definition" parms="CRS_DIALOG" index="0">Predefined Datum</OPTION>
+                <OPTION type="double" id="airylat_b" name="Latitude B" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="boolean" id="airyno_cut" name="No Cut" parms="CRS_DIALOG">true</OPTION>
+                <OPTION type="double" id="aealat_1" name="Latitude 1" parms="CRS_DIALOG">33</OPTION>
+                <OPTION type="double" id="aealat_2" name="Latitude 2" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="boolean" id="aeqdguam" name="Use Guam elliptical" parms="CRS_DIALOG">false</OPTION>
+                <OPTION type="double" id="bonnelat_1" name="Latitude 1" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="chamblat_1" name="Latitude 1" parms="CRS_DIALOG">30</OPTION>
+                <OPTION type="double" id="chamblon_1" name="Longitude 1" parms="CRS_DIALOG">-20</OPTION>
+                <OPTION type="double" id="chamblat_2" name="Latitude 2" parms="CRS_DIALOG">40</OPTION>
+                <OPTION type="double" id="chamblon_2" name="Longitude 2" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="chamblat_3" name="Latitude 3" parms="CRS_DIALOG">50</OPTION>
+                <OPTION type="double" id="chamblon_3" name="Longitude 3" parms="CRS_DIALOG">20</OPTION>
+                <OPTION type="double" id="cealat_ts" name="True Scale Latitude" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="eqdclat_1" name="Latitude 1" parms="CRS_DIALOG">33</OPTION>
+                <OPTION type="double" id="eqdclat_2" name="Latitude 2" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="eqclat_ts" name="True Scale Latitude" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="eulerlat_1" name="Latitude 1" parms="CRS_DIALOG">33</OPTION>
+                <OPTION type="double" id="eulerlat_2" name="Latitude 2" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="ob_trano_lat_p" name="Latitude Pole" parms="CRS_DIALOG">40</OPTION>
+                <OPTION type="double" id="ob_trano_lon_p" name="Longitude Pole" parms="CRS_DIALOG">40</OPTION>
+                <OPTION type="double" id="gn_sinum" name="m" parms="CRS_DIALOG">0.5</OPTION>
+                <OPTION type="double" id="gn_sinun" name="n" parms="CRS_DIALOG">1.7853980000000000</OPTION>
+                <OPTION type="double" id="geosh" name="Satellite Height [m]" parms="CRS_DIALOG">35785831</OPTION>
+                <OPTION type="choice" id="geossweep" name="Sweep Angle" parms="CRS_DIALOG" index="0">x</OPTION>
+                <OPTION type="double" id="hammerW" name="W" parms="CRS_DIALOG">0.5</OPTION>
+                <OPTION type="double" id="hammerM" name="M" parms="CRS_DIALOG">1</OPTION>
+                <OPTION type="double" id="imw_plat_1" name="Latitude 1" parms="CRS_DIALOG">33</OPTION>
+                <OPTION type="double" id="imw_plat_2" name="Latitude 2" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="labrdazi" name="Azimuth" parms="CRS_DIALOG">19</OPTION>
+                <OPTION type="double" id="lagrnglat_1" name="Latitude 1" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="lagrngW" name="W" parms="CRS_DIALOG">2</OPTION>
+                <OPTION type="double" id="lcclat_1" name="Latitude 1" parms="CRS_DIALOG">33</OPTION>
+                <OPTION type="double" id="lcclat_2" name="Latitude 2" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="leaclat_1" name="Latitude 1" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="boolean" id="leacsouth" name="South" parms="CRS_DIALOG">false</OPTION>
+                <OPTION type="double" id="merclat_ts" name="True Scale Latitude" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="murd1lat_1" name="Latitude 1" parms="CRS_DIALOG">33</OPTION>
+                <OPTION type="double" id="murd1lat_2" name="Latitude 2" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="murd2lat_1" name="Latitude 1" parms="CRS_DIALOG">33</OPTION>
+                <OPTION type="double" id="murd2lat_2" name="Latitude 2" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="murd3lat_1" name="Latitude 1" parms="CRS_DIALOG">33</OPTION>
+                <OPTION type="double" id="murd3lat_2" name="Latitude 2" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="nsperh" name="Height of view point" parms="CRS_DIALOG">1</OPTION>
+                <OPTION type="double" id="oeam" name="m" parms="CRS_DIALOG">1</OPTION>
+                <OPTION type="double" id="oean" name="n" parms="CRS_DIALOG">1</OPTION>
+                <OPTION type="double" id="oeatheta" name="theta" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="ocealat_1" name="Latitude 1" parms="CRS_DIALOG">40</OPTION>
+                <OPTION type="double" id="ocealon_1" name="Longitude 1" parms="CRS_DIALOG">-20</OPTION>
+                <OPTION type="double" id="ocealat_2" name="Latitude 2" parms="CRS_DIALOG">50</OPTION>
+                <OPTION type="double" id="ocealon_2" name="Longitude 2" parms="CRS_DIALOG">20</OPTION>
+                <OPTION type="double" id="omerclat_1" name="Latitude 1" parms="CRS_DIALOG">40</OPTION>
+                <OPTION type="double" id="omerclon_1" name="Longitude 1" parms="CRS_DIALOG">-20</OPTION>
+                <OPTION type="double" id="omerclat_2" name="Latitude 2" parms="CRS_DIALOG">50</OPTION>
+                <OPTION type="double" id="omerclon_2" name="Longitude 2" parms="CRS_DIALOG">20</OPTION>
+                <OPTION type="double" id="pconiclat_1" name="Latitude 1" parms="CRS_DIALOG">33</OPTION>
+                <OPTION type="double" id="pconiclat_2" name="Latitude 2" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="rpolylat_ts" name="True Scale Latitude" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="integer" id="lsatlsat" name="Landsat Satellite (1-5)" parms="CRS_DIALOG">5</OPTION>
+                <OPTION type="integer" id="lsatpath" name="Path (1-255/233 1-3/4-5" parms="CRS_DIALOG">195</OPTION>
+                <OPTION type="double" id="sterelat_ts" name="True Scale Latitude" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="tperstilt" name="Tilt" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="tpersazi" name="Azimuth" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="tpersh" name="h" parms="CRS_DIALOG">1000</OPTION>
+                <OPTION type="double" id="tissotlat_1" name="Latitude 1" parms="CRS_DIALOG">33</OPTION>
+                <OPTION type="double" id="tissotlat_2" name="Latitude 2" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="tpeqdlat_1" name="Latitude 1" parms="CRS_DIALOG">40</OPTION>
+                <OPTION type="double" id="tpeqdlon_1" name="Longitude 1" parms="CRS_DIALOG">-20</OPTION>
+                <OPTION type="double" id="tpeqdlat_2" name="Latitude 2" parms="CRS_DIALOG">50</OPTION>
+                <OPTION type="double" id="tpeqdlon_2" name="Longitude 2" parms="CRS_DIALOG">20</OPTION>
+                <OPTION type="boolean" id="upssouth" name="South" parms="CRS_DIALOG">true</OPTION>
+                <OPTION type="integer" id="utmzone" name="Zone" parms="CRS_DIALOG">19</OPTION>
+                <OPTION type="boolean" id="utmsouth" name="South" parms="CRS_DIALOG">false</OPTION>
+                <OPTION type="double" id="urmfpsn" name="n" parms="CRS_DIALOG">1</OPTION>
+                <OPTION type="double" id="urm5n" name="n" parms="CRS_DIALOG">1</OPTION>
+                <OPTION type="double" id="urm5q" name="q" parms="CRS_DIALOG">1</OPTION>
+                <OPTION type="double" id="urm5alphi" name="alphi" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="vitk1lat_1" name="Latitude 1" parms="CRS_DIALOG">33</OPTION>
+                <OPTION type="double" id="vitk1lat_2" name="Latitude 2" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="wag3lat_ts" name="True Scale Latitude" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="wink1lat_ts" name="True Scale Latitude" parms="CRS_DIALOG">45</OPTION>
+                <OPTION type="double" id="wink2lat_1" name="Latitude 1" parms="CRS_DIALOG">40</OPTION>
+                <OPTION type="double" id="wintrilat_1" name="Latitude 1" parms="CRS_DIALOG">40</OPTION>
+                <OPTION type="choice" id="DATUM" name="Predefined Datum" parms="CRS_DIALOG" index="0">WGS84</OPTION>
+                <OPTION type="choice" id="ELLIPSOID" name="Ellipsoid Definition" parms="CRS_DIALOG" index="0">Predefined Ellipsoids</OPTION>
+                <OPTION type="choice" id="ELLPS_DEF" name="Predefined Ellipsoids" parms="CRS_DIALOG" index="0">MERIT 1983 (a=6378137.0, rf=298.257)</OPTION>
+                <OPTION type="double" id="ELLPS_A" name="Semimajor Axis (a)" parms="CRS_DIALOG">6378137</OPTION>
+                <OPTION type="double" id="ELLPS_B" name="Semiminor Axis (b)" parms="CRS_DIALOG">6356752.314</OPTION>
+                <OPTION type="double" id="ELLPS_F" name="Flattening (f)" parms="CRS_DIALOG">0.0033530000000000</OPTION>
+                <OPTION type="double" id="ELLPS_RF" name="Reciprocal Flattening (rf)" parms="CRS_DIALOG">298.25722</OPTION>
+                <OPTION type="double" id="ELLPS_E" name="Eccentricity (e)" parms="CRS_DIALOG">9004939.287542</OPTION>
+                <OPTION type="double" id="ELLPS_ES" name="Squared Eccentricity (es)" parms="CRS_DIALOG">81088931572313.36</OPTION>
+                <OPTION type="choice" id="DATUM_SHIFT" name="Datum Shift" parms="CRS_DIALOG" index="0">none</OPTION>
+                <OPTION type="double" id="DS_DX" name="Translation X" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="DS_DY" name="Translation Y" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="DS_DZ" name="Translation Z" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="DS_RX" name="Rotation X" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="DS_RY" name="Rotation Y" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="DS_RZ" name="Rotation Z" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="DS_SC" name="Scaling" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="file" id="DS_GRID" name="Datum Shift Grid File" parms="CRS_DIALOG"/>
+                <OPTION type="double" id="LON_0" name="Central Meridian" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="LAT_0" name="Central Parallel" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="X_0" name="False Easting" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="Y_0" name="False Northing" parms="CRS_DIALOG">0</OPTION>
+                <OPTION type="double" id="K_0" name="Scale Factor" parms="CRS_DIALOG">1</OPTION>
+                <OPTION type="choice" id="UNIT" name="Unit" parms="CRS_DIALOG" index="1">Meter (1)</OPTION>
+                <OPTION type="boolean" id="OVER" name="Allow longitudes outside -180 to 180 Range" parms="CRS_DIALOG">false</OPTION>
+                <OPTION type="boolean" id="NO_DEFS" name="Ignore Defaults" parms="CRS_DIALOG">true</OPTION>
+              </parameters>
+              <OPTION type="grid_system" id="SOURCE_GRIDSYSTEM" name="Grid system">
+                <CELLSIZE>0.000277778</CELLSIZE>
+                <XMIN>-70.8824999906</XMIN>
+                <YMIN>18.679166721</YMIN>
+                <XMAX>-70.5080555162</XMAX>
+                <YMAX>19.000000080000003</YMAX>
+              </OPTION>
+              <OPTION type="choice" id="RESAMPLING" name="Resampling" index="3">Cubic 2</OPTION>
+              <OPTION type="boolean" id="BYTEWISE" name="Bytewise Interpolation">false</OPTION>
+              <OPTION type="datatype" id="DATA_TYPE" name="Data Type" index="10">Preserve</OPTION>
+              <OPTION type="boolean" id="TARGET_AREA" name="Use Target Area Polygon">false</OPTION>
+              <OPTION type="choice" id="TARGET_DEFINITION" name="Target Grid System" index="0">user defined</OPTION>
+              <OPTION type="double" id="TARGET_USER_SIZE" name="Cellsize">31</OPTION>
+              <OPTION type="double" id="TARGET_USER_XMIN" name="West">301475</OPTION>
+              <OPTION type="double" id="TARGET_USER_XMAX" name="East">341217</OPTION>
+              <OPTION type="double" id="TARGET_USER_YMIN" name="South">2065995</OPTION>
+              <OPTION type="double" id="TARGET_USER_YMAX" name="North">2101831</OPTION>
+              <OPTION type="integer" id="TARGET_USER_COLS" name="Columns">1282</OPTION>
+              <OPTION type="integer" id="TARGET_USER_ROWS" name="Rows">1156</OPTION>
+              <OPTION type="boolean" id="TARGET_USER_FLAT" name="Rounding">true</OPTION>
+              <OPTION type="choice" id="TARGET_USER_FITS" name="Fit" index="0">nodes</OPTION>
+              <OPTION type="boolean" id="OUT_X_CREATE" name="X Coordinates">false</OPTION>
+              <OPTION type="boolean" id="OUT_Y_CREATE" name="Y Coordinates">false</OPTION>
+              <INPUT type="grid" id="SOURCE" name="Source" system="SOURCE_GRIDSYSTEM">
+                <TOOL library="shapes_grid" id="7" name="Clip Grid with Polygon">
+                  <OPTION type="grid_system" id="PARAMETERS_GRID_SYSTEM" name="Grid System">
+                    <CELLSIZE>0.000277778</CELLSIZE>
+                    <XMIN>-71</XMIN>
+                    <YMIN>18</YMIN>
+                    <XMAX>-69.99999991999999</XMAX>
+                    <YMAX>19.00000008</YMAX>
+                  </OPTION>
+                  <OPTION type="choice" id="EXTENT" name="Target Extent" index="1">polygons</OPTION>
+                  <INPUT_LIST type="grid_list" id="INPUT" name="Input" system="PARAMETERS_GRID_SYSTEM">
+                    <INPUT type="grid_list" id="INPUT" name="Input" system="PARAMETERS_GRID_SYSTEM"/>
+                  </INPUT_LIST>
+                  <INPUT type="shapes" id="POLYGONS" name="Polygons"/>
+                  <OUTPUT type="grid_list" id="OUTPUT" name="Output">n18_w071_1arc_v3</OUTPUT>
+                </TOOL>
+              </INPUT>
+              <OUTPUT type="grid" id="GRID" name="Target">n18_w071_1arc_v3</OUTPUT>
+            </TOOL>
+          </INPUT>
+          <OUTPUT type="grid" id="FILLED" name="Filled DEM">n18_w071_1arc_v3 [no sinks]</OUTPUT>
+        </TOOL>
+      </INPUT>
+      <OUTPUT type="shapes" id="SEGMENTS" name="Channels">Channels</OUTPUT>
+    </TOOL>
+  </HISTORY>
+  <FILE></FILE>
+  <DESCRIPTION></DESCRIPTION>
+  <PROJECTION>
+    <WKT2>PROJCRS["WGS 84 / UTM zone 19N",BASEGEODCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]]],CONVERSION["UTM zone 19N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",-69,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing",north,ORDER[2],LENGTHUNIT["metre",1]],ID["EPSG",32619]]</WKT2>
+    <PROJ>+proj=utm +zone=19 +datum=WGS84 +units=m +no_defs </PROJ>
+    <CODE authority="EPSG">32619</CODE>
+  </PROJECTION>
+</SAGA_METADATA>
